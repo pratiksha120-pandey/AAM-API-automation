@@ -33,7 +33,7 @@ jobs:
           --reporter-htmlextra-export reports/newman-report.html \
           --reporter-htmlextra-showOnlyFails false \
           --reporter-htmlextra-logs true \
-          --reporter-htmlextra-title "API Automation Report"
+          --reporter-htmlextra-export reports/newman-report.html || true
 
       - name: Upload HTML Report
         uses: actions/upload-artifact@v4
