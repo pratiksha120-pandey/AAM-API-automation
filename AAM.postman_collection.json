@@ -1,0 +1,1666 @@
+{
+	"info": {
+		"_postman_id": "76bd9fbc-6cee-4cb5-b70f-1be22c6fb5aa",
+		"name": "AAM",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "51432215",
+		"_collection_link": "https://qa-team-12345.postman.co/workspace/Team-Workspace~b6bc59d0-1d4e-454f-877d-abcc5def949a/collection/51432215-76bd9fbc-6cee-4cb5-b70f-1be22c6fb5aa?action=share&source=collection_link&creator=51432215"
+	},
+	"item": [
+		{
+			"name": "UserLogin",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "accept-language",
+						"value": "en-US,en;q=0.9"
+					},
+					{
+						"key": "authorization",
+						"value": ""
+					},
+					{
+						"key": "content-type",
+						"value": "application/json"
+					},
+					{
+						"key": "origin",
+						"value": "https://uatamrit.piramalswasthya.org"
+					},
+					{
+						"key": "priority",
+						"value": "u=1, i"
+					},
+					{
+						"key": "referer",
+						"value": "https://uatamrit.piramalswasthya.org/aam/"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Google Chrome\";v=\"143\", \"Chromium\";v=\"143\", \"Not A(Brand\";v=\"24\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Windows\""
+					},
+					{
+						"key": "sec-fetch-dest",
+						"value": "empty"
+					},
+					{
+						"key": "sec-fetch-mode",
+						"value": "cors"
+					},
+					{
+						"key": "sec-fetch-site",
+						"value": "same-origin"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "Cookie",
+						"value": "Jwttoken=eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJtb2tyb25nIiwidXNlcklkIjoiMTk1MSIsInRva2VuX3R5cGUiOiJhY2Nlc3MiLCJqdGkiOiI0MTBjMTBjZC1iNjYzLTQwMzMtODZiNi0zYjBkYWYyMzg3MTAiLCJpYXQiOjE3NjgyMzYwNjQsImV4cCI6MTc2ODI2NDg2NH0.itcFSBimVVweTnMVaoXj1bbXND9rTWS0jeclYb9h0qGfLt8mspVVUSfL8L4xfp-2aFLhaDwhNYKcW9eyvftVSg"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"userName\":\"mokrong\",\"password\":\"ee9dfa83dd1d7d1f6b338c33571306761d0065c0845a8761a9ba4788d0768b7668d4f6b3bc85b4d7667be1ae057c97b2IP+QUGWQacEwHc1k6TqpWQ==\",\"doLogout\":true,\"withCredentials\":true,\"captchaToken\":\"0.sl_NUrbgxERsIoP8n1DlsZprJBAtThNWaDWpn525r4S6bdg7vgEJnARgB5x2db3SYDdjcKDWg382KOWBjse6wwftBlAyazX71Vpvk3atEinDbiNv5VglHZQvuY1RCgbZf8_SXqtdR93f6v5leEudZXfMqI6i27XU3J25zAUx5VREHCIE55ZMwNu578k9aIo18Vo24hTIgGgfg9oJObXg-3qfsZuTUw_9bPaTreq-lMI4JkwY9szIrVRnEelf3oy4HdZBRdSINtHoBj1TElJBatEiGIfuHw33W_f4Y0HOaWo1Xh3KzvHRaxyRmBx8WVoq8UhrXVi9oe-l01VuKjfLRULPxCKlJd_P5j0lyV6RMxCVB2UNMj21Wb0zK0yc0qhRQbTVAnLx2mlVK-1iGqe1yqC826BCrpSF8qsoyl-5xnwCJ014hqRrS63tv8TzTeBro12oXOgyPx90vInm8_9RM1I8Hx1ztFJR2oUqdAyM9DFTU8oed5igYxT0OzcKQrVzeeoqMIazplpVx2OYOc1b2cofo5zczJ0cfr0E3KTJ9pwTJGqcp4Tk6djgm9CBMjN4yA5pbE3SRLv2GtR_mCy20MyvaAf_gJ4hdWRbKPAFykaNezJptmY0QoCZHRDi1jIxo8lqwvoAY4lkfP37ltiREPZbn6W7uaOfV01LXmk3Y7RtBm2QqYooTps82PdPlt47qU23_FSM5CbZtuSP1sGpUlxHUGQw7FPWY0xKJe9keU-eyEBm23w4Y2dAEXXMES85Uo-Fn7DfvELIXCbQdCLkGv_mcQb4rYZvPPPGBmYYgyvZ52j8CQZZz1XTHpUbzaTV8l6ZkQ7zu5vN3-GsCD6Xb7QyQqUDynJ0BrkF4bwgwpQGE3f5WnQsltZPR6vtJBkZ2uiPNrLuXTFuey9ZcIToU_eZKurzZvNincfI5uWsUi6t9CLj-AMZvZ_XVnVmU7EFnBydEgmQQHzvVLQwVMonw1GhtC2Xou5Cfj9kYbsIFpM.wQCAC5ykNbXQBXH2cRYpoA.0b4b80383bd3d56ce75b0f0ce9ddfb9b10f6d39cabc281e99275699440aaf1bf\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://uatamrit.piramalswasthya.org/common-api/user/userAuthenticate",
+					"protocol": "https",
+					"host": [
+						"uatamrit",
+						"piramalswasthya",
+						"org"
+					],
+					"path": [
+						"common-api",
+						"user",
+						"userAuthenticate"
+					]
+				},
+				"description": "Generated from cURL: curl 'https://uatamrit.piramalswasthya.org/common-api/user/userAuthenticate' \\\r\n  -H 'accept: application/json, text/plain, */*' \\\r\n  -H 'accept-language: en-US,en;q=0.9' \\\r\n  -H 'authorization;' \\\r\n  -H 'content-type: application/json' \\\r\n  -b 'Jwttoken=eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJtb2tyb25nIiwidXNlcklkIjoiMTk1MSIsInRva2VuX3R5cGUiOiJhY2Nlc3MiLCJqdGkiOiI0MTBjMTBjZC1iNjYzLTQwMzMtODZiNi0zYjBkYWYyMzg3MTAiLCJpYXQiOjE3NjgyMzYwNjQsImV4cCI6MTc2ODI2NDg2NH0.itcFSBimVVweTnMVaoXj1bbXND9rTWS0jeclYb9h0qGfLt8mspVVUSfL8L4xfp-2aFLhaDwhNYKcW9eyvftVSg' \\\r\n  -H 'origin: https://uatamrit.piramalswasthya.org' \\\r\n  -H 'priority: u=1, i' \\\r\n  -H 'referer: https://uatamrit.piramalswasthya.org/aam/' \\\r\n  -H 'sec-ch-ua: \"Google Chrome\";v=\"143\", \"Chromium\";v=\"143\", \"Not A(Brand\";v=\"24\"' \\\r\n  -H 'sec-ch-ua-mobile: ?0' \\\r\n  -H 'sec-ch-ua-platform: \"Windows\"' \\\r\n  -H 'sec-fetch-dest: empty' \\\r\n  -H 'sec-fetch-mode: cors' \\\r\n  -H 'sec-fetch-site: same-origin' \\\r\n  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36' \\\r\n  --data-raw '{\"userName\":\"mokrong\",\"password\":\"ee9dfa83dd1d7d1f6b338c33571306761d0065c0845a8761a9ba4788d0768b7668d4f6b3bc85b4d7667be1ae057c97b2IP+QUGWQacEwHc1k6TqpWQ==\",\"doLogout\":true,\"withCredentials\":true,\"captchaToken\":\"0.sl_NUrbgxERsIoP8n1DlsZprJBAtThNWaDWpn525r4S6bdg7vgEJnARgB5x2db3SYDdjcKDWg382KOWBjse6wwftBlAyazX71Vpvk3atEinDbiNv5VglHZQvuY1RCgbZf8_SXqtdR93f6v5leEudZXfMqI6i27XU3J25zAUx5VREHCIE55ZMwNu578k9aIo18Vo24hTIgGgfg9oJObXg-3qfsZuTUw_9bPaTreq-lMI4JkwY9szIrVRnEelf3oy4HdZBRdSINtHoBj1TElJBatEiGIfuHw33W_f4Y0HOaWo1Xh3KzvHRaxyRmBx8WVoq8UhrXVi9oe-l01VuKjfLRULPxCKlJd_P5j0lyV6RMxCVB2UNMj21Wb0zK0yc0qhRQbTVAnLx2mlVK-1iGqe1yqC826BCrpSF8qsoyl-5xnwCJ014hqRrS63tv8TzTeBro12oXOgyPx90vInm8_9RM1I8Hx1ztFJR2oUqdAyM9DFTU8oed5igYxT0OzcKQrVzeeoqMIazplpVx2OYOc1b2cofo5zczJ0cfr0E3KTJ9pwTJGqcp4Tk6djgm9CBMjN4yA5pbE3SRLv2GtR_mCy20MyvaAf_gJ4hdWRbKPAFykaNezJptmY0QoCZHRDi1jIxo8lqwvoAY4lkfP37ltiREPZbn6W7uaOfV01LXmk3Y7RtBm2QqYooTps82PdPlt47qU23_FSM5CbZtuSP1sGpUlxHUGQw7FPWY0xKJe9keU-eyEBm23w4Y2dAEXXMES85Uo-Fn7DfvELIXCbQdCLkGv_mcQb4rYZvPPPGBmYYgyvZ52j8CQZZz1XTHpUbzaTV8l6ZkQ7zu5vN3-GsCD6Xb7QyQqUDynJ0BrkF4bwgwpQGE3f5WnQsltZPR6vtJBkZ2uiPNrLuXTFuey9ZcIToU_eZKurzZvNincfI5uWsUi6t9CLj-AMZvZ_XVnVmU7EFnBydEgmQQHzvVLQwVMonw1GhtC2Xou5Cfj9kYbsIFpM.wQCAC5ykNbXQBXH2cRYpoA.0b4b80383bd3d56ce75b0f0ce9ddfb9b10f6d39cabc281e99275699440aaf1bf\"}'"
+			},
+			"response": []
+		},
+		{
+			"name": "registrarBeneficaryRegistrationNew",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "accept-language",
+						"value": "en-US,en;q=0.9"
+					},
+					{
+						"key": "authorization",
+						"value": "ccdd3e139e3ae5390ebc8a62ceeae534e7599ad525c5adc30473ed6711d76907"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json"
+					},
+					{
+						"key": "origin",
+						"value": "https://uatamrit.piramalswasthya.org"
+					},
+					{
+						"key": "priority",
+						"value": "u=1, i"
+					},
+					{
+						"key": "referer",
+						"value": "https://uatamrit.piramalswasthya.org/aam/"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Google Chrome\";v=\"143\", \"Chromium\";v=\"143\", \"Not A(Brand\";v=\"24\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Windows\""
+					},
+					{
+						"key": "sec-fetch-dest",
+						"value": "empty"
+					},
+					{
+						"key": "sec-fetch-mode",
+						"value": "cors"
+					},
+					{
+						"key": "sec-fetch-site",
+						"value": "same-origin"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "Cookie",
+						"value": "Jwttoken=eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJtb2tyb25nIiwidXNlcklkIjoiMTk1MSIsInRva2VuX3R5cGUiOiJhY2Nlc3MiLCJqdGkiOiJhNmVhN2JhNC00ODBjLTRhOGUtYjYzNC04YzcxODY0MDE3ZGQiLCJpYXQiOjE3NjgyMzY2NDMsImV4cCI6MTc2ODI2NTQ0M30.o4Tsk5-ytthD6CqTrjyJFAvRjjhZm0msaGs7mu2zr_yFo6jpk2slOoPkgEq5_a-shD0XX4IwdLUtOvO1usR3sA"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"age\":\"32\",\"ageAtMarriage\":null,\"genderID\":2,\"firstName\":\"Rajni\",\"lastName\":null,\"genderName\":\"Female\",\"ageUnits\":\"Years\",\"dOB\":\"1994-01-12T16:54:12.534Z\",\"maritalStatusName\":\"Married\",\"phoneNo\":null,\"image\":null,\"dob\":\"1994-01-12T16:54:12.534Z\",\"address\":null,\"parkingPlaceID\":33,\"fatherName\":null,\"healthIdNumber\":null,\"beneficiaryConsent\":true,\"i_bendemographics\":{\"monthlyFamilyIncome\":null,\"occupationName\":null,\"communityName\":null,\"countryID\":1,\"countryName\":\"India\",\"stateID\":5,\"stateName\":\"Assam\",\"districtID\":50,\"districtName\":\"Golaghat\",\"blockID\":6431,\"blockName\":\"K.B.ALI\",\"districtBranchID\":null,\"districtBranchName\":null,\"zoneID\":null,\"zoneName\":null,\"parkingPlaceName\":null,\"servicePointID\":4020,\"servicePointName\":\"MokrongTE\",\"habitation\":null,\"pinCode\":null,\"addressLine1\":null,\"addressLine2\":null,\"addressLine3\":null,\"religionName\":null},\"abha\":null,\"benPhoneMaps\":[{\"phoneNo\":null,\"phoneTypeID\":null,\"vanID\":295,\"parkingPlaceID\":33,\"createdBy\":\"Mokrong\"}],\"vanID\":295,\"createdBy\":\"Mokrong\",\"providerServiceMapID\":1717,\"providerServiceMapId\":1717}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://uatamrit.piramalswasthya.org/hwc-api/registrar/registrarBeneficaryRegistrationNew",
+					"protocol": "https",
+					"host": [
+						"uatamrit",
+						"piramalswasthya",
+						"org"
+					],
+					"path": [
+						"hwc-api",
+						"registrar",
+						"registrarBeneficaryRegistrationNew"
+					]
+				},
+				"description": "Generated from cURL: curl 'https://uatamrit.piramalswasthya.org/hwc-api/registrar/registrarBeneficaryRegistrationNew' \\\r\n  -H 'accept: application/json, text/plain, */*' \\\r\n  -H 'accept-language: en-US,en;q=0.9' \\\r\n  -H 'authorization: ccdd3e139e3ae5390ebc8a62ceeae534e7599ad525c5adc30473ed6711d76907' \\\r\n  -H 'content-type: application/json' \\\r\n  -b 'Jwttoken=eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJtb2tyb25nIiwidXNlcklkIjoiMTk1MSIsInRva2VuX3R5cGUiOiJhY2Nlc3MiLCJqdGkiOiJhNmVhN2JhNC00ODBjLTRhOGUtYjYzNC04YzcxODY0MDE3ZGQiLCJpYXQiOjE3NjgyMzY2NDMsImV4cCI6MTc2ODI2NTQ0M30.o4Tsk5-ytthD6CqTrjyJFAvRjjhZm0msaGs7mu2zr_yFo6jpk2slOoPkgEq5_a-shD0XX4IwdLUtOvO1usR3sA' \\\r\n  -H 'origin: https://uatamrit.piramalswasthya.org' \\\r\n  -H 'priority: u=1, i' \\\r\n  -H 'referer: https://uatamrit.piramalswasthya.org/aam/' \\\r\n  -H 'sec-ch-ua: \"Google Chrome\";v=\"143\", \"Chromium\";v=\"143\", \"Not A(Brand\";v=\"24\"' \\\r\n  -H 'sec-ch-ua-mobile: ?0' \\\r\n  -H 'sec-ch-ua-platform: \"Windows\"' \\\r\n  -H 'sec-fetch-dest: empty' \\\r\n  -H 'sec-fetch-mode: cors' \\\r\n  -H 'sec-fetch-site: same-origin' \\\r\n  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36' \\\r\n  --data-raw '{\"age\":\"32\",\"ageAtMarriage\":null,\"genderID\":2,\"firstName\":\"Rajni\",\"lastName\":null,\"genderName\":\"Female\",\"ageUnits\":\"Years\",\"dOB\":\"1994-01-12T16:54:12.534Z\",\"maritalStatusName\":\"Married\",\"phoneNo\":null,\"image\":null,\"dob\":\"1994-01-12T16:54:12.534Z\",\"address\":null,\"parkingPlaceID\":33,\"fatherName\":null,\"healthIdNumber\":null,\"beneficiaryConsent\":true,\"i_bendemographics\":{\"monthlyFamilyIncome\":null,\"occupationName\":null,\"communityName\":null,\"countryID\":1,\"countryName\":\"India\",\"stateID\":5,\"stateName\":\"Assam\",\"districtID\":50,\"districtName\":\"Golaghat\",\"blockID\":6431,\"blockName\":\"K.B.ALI\",\"districtBranchID\":null,\"districtBranchName\":null,\"zoneID\":null,\"zoneName\":null,\"parkingPlaceName\":null,\"servicePointID\":4020,\"servicePointName\":\"MokrongTE\",\"habitation\":null,\"pinCode\":null,\"addressLine1\":null,\"addressLine2\":null,\"addressLine3\":null,\"religionName\":null},\"abha\":null,\"benPhoneMaps\":[{\"phoneNo\":null,\"phoneTypeID\":null,\"vanID\":295,\"parkingPlaceID\":33,\"createdBy\":\"Mokrong\"}],\"vanID\":295,\"createdBy\":\"Mokrong\",\"providerServiceMapID\":1717,\"providerServiceMapId\":1717}'"
+			},
+			"response": []
+		},
+		{
+			"name": "registrarQuickSearchES",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "accept-language",
+						"value": "en-US,en;q=0.9"
+					},
+					{
+						"key": "authorization",
+						"value": "ccdd3e139e3ae5390ebc8a62ceeae534e7599ad525c5adc30473ed6711d76907"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json"
+					},
+					{
+						"key": "origin",
+						"value": "https://uatamrit.piramalswasthya.org"
+					},
+					{
+						"key": "priority",
+						"value": "u=1, i"
+					},
+					{
+						"key": "referer",
+						"value": "https://uatamrit.piramalswasthya.org/aam/"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Google Chrome\";v=\"143\", \"Chromium\";v=\"143\", \"Not A(Brand\";v=\"24\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Windows\""
+					},
+					{
+						"key": "sec-fetch-dest",
+						"value": "empty"
+					},
+					{
+						"key": "sec-fetch-mode",
+						"value": "cors"
+					},
+					{
+						"key": "sec-fetch-site",
+						"value": "same-origin"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "Cookie",
+						"value": "Jwttoken=eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJtb2tyb25nIiwidXNlcklkIjoiMTk1MSIsInRva2VuX3R5cGUiOiJhY2Nlc3MiLCJqdGkiOiJhNmVhN2JhNC00ODBjLTRhOGUtYjYzNC04YzcxODY0MDE3ZGQiLCJpYXQiOjE3NjgyMzY2NDMsImV4cCI6MTc2ODI2NTQ0M30.o4Tsk5-ytthD6CqTrjyJFAvRjjhZm0msaGs7mu2zr_yFo6jpk2slOoPkgEq5_a-shD0XX4IwdLUtOvO1usR3sA"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"search\":\"502262062935\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://uatamrit.piramalswasthya.org/hwc-api/registrar/quickSearchES",
+					"protocol": "https",
+					"host": [
+						"uatamrit",
+						"piramalswasthya",
+						"org"
+					],
+					"path": [
+						"hwc-api",
+						"registrar",
+						"quickSearchES"
+					]
+				},
+				"description": "Generated from cURL: curl 'https://uatamrit.piramalswasthya.org/hwc-api/registrar/quickSearchES' \\\r\n  -H 'accept: application/json, text/plain, */*' \\\r\n  -H 'accept-language: en-US,en;q=0.9' \\\r\n  -H 'authorization: ccdd3e139e3ae5390ebc8a62ceeae534e7599ad525c5adc30473ed6711d76907' \\\r\n  -H 'content-type: application/json' \\\r\n  -b 'Jwttoken=eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJtb2tyb25nIiwidXNlcklkIjoiMTk1MSIsInRva2VuX3R5cGUiOiJhY2Nlc3MiLCJqdGkiOiJhNmVhN2JhNC00ODBjLTRhOGUtYjYzNC04YzcxODY0MDE3ZGQiLCJpYXQiOjE3NjgyMzY2NDMsImV4cCI6MTc2ODI2NTQ0M30.o4Tsk5-ytthD6CqTrjyJFAvRjjhZm0msaGs7mu2zr_yFo6jpk2slOoPkgEq5_a-shD0XX4IwdLUtOvO1usR3sA' \\\r\n  -H 'origin: https://uatamrit.piramalswasthya.org' \\\r\n  -H 'priority: u=1, i' \\\r\n  -H 'referer: https://uatamrit.piramalswasthya.org/aam/' \\\r\n  -H 'sec-ch-ua: \"Google Chrome\";v=\"143\", \"Chromium\";v=\"143\", \"Not A(Brand\";v=\"24\"' \\\r\n  -H 'sec-ch-ua-mobile: ?0' \\\r\n  -H 'sec-ch-ua-platform: \"Windows\"' \\\r\n  -H 'sec-fetch-dest: empty' \\\r\n  -H 'sec-fetch-mode: cors' \\\r\n  -H 'sec-fetch-site: same-origin' \\\r\n  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36' \\\r\n  --data-raw '{\"search\":\"502262062935\"}'"
+			},
+			"response": []
+		},
+		{
+			"name": "registrarAdvancedSearchES",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "accept-language",
+						"value": "en-US,en;q=0.9"
+					},
+					{
+						"key": "authorization",
+						"value": "ccdd3e139e3ae5390ebc8a62ceeae534e7599ad525c5adc30473ed6711d76907"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json"
+					},
+					{
+						"key": "origin",
+						"value": "https://uatamrit.piramalswasthya.org"
+					},
+					{
+						"key": "priority",
+						"value": "u=1, i"
+					},
+					{
+						"key": "referer",
+						"value": "https://uatamrit.piramalswasthya.org/aam/"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Google Chrome\";v=\"143\", \"Chromium\";v=\"143\", \"Not A(Brand\";v=\"24\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Windows\""
+					},
+					{
+						"key": "sec-fetch-dest",
+						"value": "empty"
+					},
+					{
+						"key": "sec-fetch-mode",
+						"value": "cors"
+					},
+					{
+						"key": "sec-fetch-site",
+						"value": "same-origin"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "Cookie",
+						"value": "Jwttoken=eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJtb2tyb25nIiwidXNlcklkIjoiMTk1MSIsInRva2VuX3R5cGUiOiJhY2Nlc3MiLCJqdGkiOiJhNmVhN2JhNC00ODBjLTRhOGUtYjYzNC04YzcxODY0MDE3ZGQiLCJpYXQiOjE3NjgyMzY2NDMsImV4cCI6MTc2ODI2NTQ0M30.o4Tsk5-ytthD6CqTrjyJFAvRjjhZm0msaGs7mu2zr_yFo6jpk2slOoPkgEq5_a-shD0XX4IwdLUtOvO1usR3sA"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"firstName\":\"rajini\",\"lastName\":null,\"fatherName\":null,\"dob\":null,\"genderID\":2,\"i_bendemographics\":{\"stateID\":5,\"districtID\":50,\"blockID\":null,\"villageID\":null}}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://uatamrit.piramalswasthya.org/hwc-api/registrar/advancedSearchES",
+					"protocol": "https",
+					"host": [
+						"uatamrit",
+						"piramalswasthya",
+						"org"
+					],
+					"path": [
+						"hwc-api",
+						"registrar",
+						"advancedSearchES"
+					]
+				},
+				"description": "Generated from cURL: curl 'https://uatamrit.piramalswasthya.org/hwc-api/registrar/advancedSearchES' \\\r\n  -H 'accept: application/json, text/plain, */*' \\\r\n  -H 'accept-language: en-US,en;q=0.9' \\\r\n  -H 'authorization: ccdd3e139e3ae5390ebc8a62ceeae534e7599ad525c5adc30473ed6711d76907' \\\r\n  -H 'content-type: application/json' \\\r\n  -b 'Jwttoken=eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJtb2tyb25nIiwidXNlcklkIjoiMTk1MSIsInRva2VuX3R5cGUiOiJhY2Nlc3MiLCJqdGkiOiJhNmVhN2JhNC00ODBjLTRhOGUtYjYzNC04YzcxODY0MDE3ZGQiLCJpYXQiOjE3NjgyMzY2NDMsImV4cCI6MTc2ODI2NTQ0M30.o4Tsk5-ytthD6CqTrjyJFAvRjjhZm0msaGs7mu2zr_yFo6jpk2slOoPkgEq5_a-shD0XX4IwdLUtOvO1usR3sA' \\\r\n  -H 'origin: https://uatamrit.piramalswasthya.org' \\\r\n  -H 'priority: u=1, i' \\\r\n  -H 'referer: https://uatamrit.piramalswasthya.org/aam/' \\\r\n  -H 'sec-ch-ua: \"Google Chrome\";v=\"143\", \"Chromium\";v=\"143\", \"Not A(Brand\";v=\"24\"' \\\r\n  -H 'sec-ch-ua-mobile: ?0' \\\r\n  -H 'sec-ch-ua-platform: \"Windows\"' \\\r\n  -H 'sec-fetch-dest: empty' \\\r\n  -H 'sec-fetch-mode: cors' \\\r\n  -H 'sec-fetch-site: same-origin' \\\r\n  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36' \\\r\n  --data-raw '{\"firstName\":\"rajini\",\"lastName\":null,\"fatherName\":null,\"dob\":null,\"genderID\":2,\"i_bendemographics\":{\"stateID\":5,\"districtID\":50,\"blockID\":null,\"villageID\":null}}'"
+			},
+			"response": []
+		},
+		{
+			"name": "GetBenDetailsByRegIDnurseModule",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "accept-language",
+						"value": "en-US,en;q=0.9"
+					},
+					{
+						"key": "authorization",
+						"value": "ccdd3e139e3ae5390ebc8a62ceeae534e7599ad525c5adc30473ed6711d76907"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json"
+					},
+					{
+						"key": "origin",
+						"value": "https://uatamrit.piramalswasthya.org"
+					},
+					{
+						"key": "priority",
+						"value": "u=1, i"
+					},
+					{
+						"key": "referer",
+						"value": "https://uatamrit.piramalswasthya.org/aam/"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Google Chrome\";v=\"143\", \"Chromium\";v=\"143\", \"Not A(Brand\";v=\"24\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Windows\""
+					},
+					{
+						"key": "sec-fetch-dest",
+						"value": "empty"
+					},
+					{
+						"key": "sec-fetch-mode",
+						"value": "cors"
+					},
+					{
+						"key": "sec-fetch-site",
+						"value": "same-origin"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "Cookie",
+						"value": "Jwttoken=eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJtb2tyb25nIiwidXNlcklkIjoiMTk1MSIsInRva2VuX3R5cGUiOiJhY2Nlc3MiLCJqdGkiOiJhNmVhN2JhNC00ODBjLTRhOGUtYjYzNC04YzcxODY0MDE3ZGQiLCJpYXQiOjE3NjgyMzY2NDMsImV4cCI6MTc2ODI2NTQ0M30.o4Tsk5-ytthD6CqTrjyJFAvRjjhZm0msaGs7mu2zr_yFo6jpk2slOoPkgEq5_a-shD0XX4IwdLUtOvO1usR3sA"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"beneficiaryRegID\":\"10468524\",\"benFlowID\":3107379}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://uatamrit.piramalswasthya.org/hwc-api/registrar/get/benDetailsByRegIDForLeftPanelNew",
+					"protocol": "https",
+					"host": [
+						"uatamrit",
+						"piramalswasthya",
+						"org"
+					],
+					"path": [
+						"hwc-api",
+						"registrar",
+						"get",
+						"benDetailsByRegIDForLeftPanelNew"
+					]
+				},
+				"description": "Generated from cURL: curl 'https://uatamrit.piramalswasthya.org/hwc-api/registrar/get/benDetailsByRegIDForLeftPanelNew' \\\r\n  -H 'accept: application/json, text/plain, */*' \\\r\n  -H 'accept-language: en-US,en;q=0.9' \\\r\n  -H 'authorization: ccdd3e139e3ae5390ebc8a62ceeae534e7599ad525c5adc30473ed6711d76907' \\\r\n  -H 'content-type: application/json' \\\r\n  -b 'Jwttoken=eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJtb2tyb25nIiwidXNlcklkIjoiMTk1MSIsInRva2VuX3R5cGUiOiJhY2Nlc3MiLCJqdGkiOiJhNmVhN2JhNC00ODBjLTRhOGUtYjYzNC04YzcxODY0MDE3ZGQiLCJpYXQiOjE3NjgyMzY2NDMsImV4cCI6MTc2ODI2NTQ0M30.o4Tsk5-ytthD6CqTrjyJFAvRjjhZm0msaGs7mu2zr_yFo6jpk2slOoPkgEq5_a-shD0XX4IwdLUtOvO1usR3sA' \\\r\n  -H 'origin: https://uatamrit.piramalswasthya.org' \\\r\n  -H 'priority: u=1, i' \\\r\n  -H 'referer: https://uatamrit.piramalswasthya.org/aam/' \\\r\n  -H 'sec-ch-ua: \"Google Chrome\";v=\"143\", \"Chromium\";v=\"143\", \"Not A(Brand\";v=\"24\"' \\\r\n  -H 'sec-ch-ua-mobile: ?0' \\\r\n  -H 'sec-ch-ua-platform: \"Windows\"' \\\r\n  -H 'sec-fetch-dest: empty' \\\r\n  -H 'sec-fetch-mode: cors' \\\r\n  -H 'sec-fetch-site: same-origin' \\\r\n  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36' \\\r\n  --data-raw '{\"beneficiaryRegID\":\"10468524\",\"benFlowID\":3107379}'"
+			},
+			"response": []
+		},
+		{
+			"name": "saveNurseData",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "accept-language",
+						"value": "en-US,en;q=0.9"
+					},
+					{
+						"key": "authorization",
+						"value": "ccdd3e139e3ae5390ebc8a62ceeae534e7599ad525c5adc30473ed6711d76907"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json"
+					},
+					{
+						"key": "origin",
+						"value": "https://uatamrit.piramalswasthya.org"
+					},
+					{
+						"key": "priority",
+						"value": "u=1, i"
+					},
+					{
+						"key": "referer",
+						"value": "https://uatamrit.piramalswasthya.org/aam/"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Google Chrome\";v=\"143\", \"Chromium\";v=\"143\", \"Not A(Brand\";v=\"24\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Windows\""
+					},
+					{
+						"key": "sec-fetch-dest",
+						"value": "empty"
+					},
+					{
+						"key": "sec-fetch-mode",
+						"value": "cors"
+					},
+					{
+						"key": "sec-fetch-site",
+						"value": "same-origin"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "Cookie",
+						"value": "Jwttoken=eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJtb2tyb25nIiwidXNlcklkIjoiMTk1MSIsInRva2VuX3R5cGUiOiJhY2Nlc3MiLCJqdGkiOiJhNmVhN2JhNC00ODBjLTRhOGUtYjYzNC04YzcxODY0MDE3ZGQiLCJpYXQiOjE3NjgyMzY2NDMsImV4cCI6MTc2ODI2NTQ0M30.o4Tsk5-ytthD6CqTrjyJFAvRjjhZm0msaGs7mu2zr_yFo6jpk2slOoPkgEq5_a-shD0XX4IwdLUtOvO1usR3sA"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"visitDetails\":{\"beneficiaryRegID\":\"10468524\",\"providerServiceMapID\":1717,\"visitNo\":null,\"visitReason\":\"New Chief Complaint\",\"subVisitCategory\":null,\"visitCategory\":\"General OPD (QC)\",\"pregnancyStatus\":null,\"followUpForFpMethod\":null,\"otherFollowUpForFpMethod\":null,\"sideEffects\":null,\"otherSideEffects\":null,\"IdrsOrCbac\":\"CBAC\",\"rCHID\":null,\"healthFacilityType\":null,\"healthFacilityLocation\":null,\"reportFilePath\":null,\"createdBy\":\"Mokrong\",\"vanID\":295,\"parkingPlaceID\":33,\"fileIDs\":null,\"presentChiefComplaint\":null,\"presentChiefComplaintID\":null,\"selectedDiagnosis\":null,\"selectedProvisionalDiagnosisID\":null,\"recommendedActionPc\":null,\"remarksPc\":null,\"presentChiefComplaintView\":null,\"diseaseSummary\":null,\"diseasesummaryID\":null,\"recommendedAction\":null,\"remarks\":null,\"informationGiven\":null,\"diseaseSummaryView\":null},\"vitalsDetails\":{\"beneficiaryRegID\":\"10468524\",\"benVisitID\":null,\"providerServiceMapID\":1717,\"weight_Kg\":\"54\",\"height_cm\":\"156\",\"waistCircumference_cm\":null,\"hipCircumference_cm\":null,\"bMI\":22.2,\"waistHipRatio\":null,\"headCircumference_cm\":null,\"midUpperArmCircumference_MUAC_cm\":null,\"temperature\":\"97\",\"pulseRate\":null,\"sPO2\":null,\"systolicBP_1stReading\":\"120\",\"diastolicBP_1stReading\":\"80\",\"bloodGlucose_Fasting\":null,\"bloodGlucose_Random\":null,\"bloodGlucose_2hr_PP\":null,\"respiratoryRate\":null,\"rbsTestResult\":null,\"rbsTestRemarks\":null,\"rbsCheckBox\":true,\"hemoglobin\":null,\"createdBy\":\"Mokrong\",\"frequentCoughChecked\":null,\"sputumChecked\":null,\"coughAtNightChecked\":null,\"wheezingChecked\":null,\"painInChestChecked\":null,\"shortnessOfBreathChecked\":null,\"vanID\":295,\"parkingPlaceID\":33},\"chiefComplaintList\":[{\"beneficiaryRegID\":10468524,\"benVisitID\":null,\"providerServiceMapID\":1717,\"conceptID\":\"386661006\",\"chiefComplaint\":\"Fever\",\"chiefComplaintID\":167,\"duration\":\"2\",\"unitOfDuration\":\"Days\",\"description\":null,\"createdBy\":\"Mokrong\",\"vanID\":295,\"parkingPlaceID\":33},{\"beneficiaryRegID\":10468524,\"benVisitID\":null,\"providerServiceMapID\":1717,\"conceptID\":null,\"chiefComplaint\":null,\"chiefComplaintID\":null,\"createdBy\":\"Mokrong\",\"vanID\":295,\"parkingPlaceID\":33}],\"benFlowID\":3107379,\"beneficiaryID\":572977517644,\"sessionID\":3,\"parkingPlaceID\":33,\"vanID\":295,\"serviceID\":9,\"createdBy\":\"Mokrong\",\"tcRequest\":null,\"beneficiaryRegID\":10468524,\"providerServiceMapID\":1717}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://uatamrit.piramalswasthya.org/hwc-api/genOPD-QC-quickConsult/save/nurseData",
+					"protocol": "https",
+					"host": [
+						"uatamrit",
+						"piramalswasthya",
+						"org"
+					],
+					"path": [
+						"hwc-api",
+						"genOPD-QC-quickConsult",
+						"save",
+						"nurseData"
+					]
+				},
+				"description": "Generated from cURL: curl 'https://uatamrit.piramalswasthya.org/hwc-api/genOPD-QC-quickConsult/save/nurseData' \\\r\n  -H 'accept: application/json, text/plain, */*' \\\r\n  -H 'accept-language: en-US,en;q=0.9' \\\r\n  -H 'authorization: ccdd3e139e3ae5390ebc8a62ceeae534e7599ad525c5adc30473ed6711d76907' \\\r\n  -H 'content-type: application/json' \\\r\n  -b 'Jwttoken=eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJtb2tyb25nIiwidXNlcklkIjoiMTk1MSIsInRva2VuX3R5cGUiOiJhY2Nlc3MiLCJqdGkiOiJhNmVhN2JhNC00ODBjLTRhOGUtYjYzNC04YzcxODY0MDE3ZGQiLCJpYXQiOjE3NjgyMzY2NDMsImV4cCI6MTc2ODI2NTQ0M30.o4Tsk5-ytthD6CqTrjyJFAvRjjhZm0msaGs7mu2zr_yFo6jpk2slOoPkgEq5_a-shD0XX4IwdLUtOvO1usR3sA' \\\r\n  -H 'origin: https://uatamrit.piramalswasthya.org' \\\r\n  -H 'priority: u=1, i' \\\r\n  -H 'referer: https://uatamrit.piramalswasthya.org/aam/' \\\r\n  -H 'sec-ch-ua: \"Google Chrome\";v=\"143\", \"Chromium\";v=\"143\", \"Not A(Brand\";v=\"24\"' \\\r\n  -H 'sec-ch-ua-mobile: ?0' \\\r\n  -H 'sec-ch-ua-platform: \"Windows\"' \\\r\n  -H 'sec-fetch-dest: empty' \\\r\n  -H 'sec-fetch-mode: cors' \\\r\n  -H 'sec-fetch-site: same-origin' \\\r\n  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36' \\\r\n  --data-raw '{\"visitDetails\":{\"beneficiaryRegID\":\"10468524\",\"providerServiceMapID\":1717,\"visitNo\":null,\"visitReason\":\"New Chief Complaint\",\"subVisitCategory\":null,\"visitCategory\":\"General OPD (QC)\",\"pregnancyStatus\":null,\"followUpForFpMethod\":null,\"otherFollowUpForFpMethod\":null,\"sideEffects\":null,\"otherSideEffects\":null,\"IdrsOrCbac\":\"CBAC\",\"rCHID\":null,\"healthFacilityType\":null,\"healthFacilityLocation\":null,\"reportFilePath\":null,\"createdBy\":\"Mokrong\",\"vanID\":295,\"parkingPlaceID\":33,\"fileIDs\":null,\"presentChiefComplaint\":null,\"presentChiefComplaintID\":null,\"selectedDiagnosis\":null,\"selectedProvisionalDiagnosisID\":null,\"recommendedActionPc\":null,\"remarksPc\":null,\"presentChiefComplaintView\":null,\"diseaseSummary\":null,\"diseasesummaryID\":null,\"recommendedAction\":null,\"remarks\":null,\"informationGiven\":null,\"diseaseSummaryView\":null},\"vitalsDetails\":{\"beneficiaryRegID\":\"10468524\",\"benVisitID\":null,\"providerServiceMapID\":1717,\"weight_Kg\":\"54\",\"height_cm\":\"156\",\"waistCircumference_cm\":null,\"hipCircumference_cm\":null,\"bMI\":22.2,\"waistHipRatio\":null,\"headCircumference_cm\":null,\"midUpperArmCircumference_MUAC_cm\":null,\"temperature\":\"97\",\"pulseRate\":null,\"sPO2\":null,\"systolicBP_1stReading\":\"120\",\"diastolicBP_1stReading\":\"80\",\"bloodGlucose_Fasting\":null,\"bloodGlucose_Random\":null,\"bloodGlucose_2hr_PP\":null,\"respiratoryRate\":null,\"rbsTestResult\":null,\"rbsTestRemarks\":null,\"rbsCheckBox\":true,\"hemoglobin\":null,\"createdBy\":\"Mokrong\",\"frequentCoughChecked\":null,\"sputumChecked\":null,\"coughAtNightChecked\":null,\"wheezingChecked\":null,\"painInChestChecked\":null,\"shortnessOfBreathChecked\":null,\"vanID\":295,\"parkingPlaceID\":33},\"chiefComplaintList\":[{\"beneficiaryRegID\":10468524,\"benVisitID\":null,\"providerServiceMapID\":1717,\"conceptID\":\"386661006\",\"chiefComplaint\":\"Fever\",\"chiefComplaintID\":167,\"duration\":\"2\",\"unitOfDuration\":\"Days\",\"description\":null,\"createdBy\":\"Mokrong\",\"vanID\":295,\"parkingPlaceID\":33},{\"beneficiaryRegID\":10468524,\"benVisitID\":null,\"providerServiceMapID\":1717,\"conceptID\":null,\"chiefComplaint\":null,\"chiefComplaintID\":null,\"createdBy\":\"Mokrong\",\"vanID\":295,\"parkingPlaceID\":33}],\"benFlowID\":3107379,\"beneficiaryID\":572977517644,\"sessionID\":3,\"parkingPlaceID\":33,\"vanID\":295,\"serviceID\":9,\"createdBy\":\"Mokrong\",\"tcRequest\":null,\"beneficiaryRegID\":10468524,\"providerServiceMapID\":1717}'"
+			},
+			"response": []
+		},
+		{
+			"name": "GetBenDetailsByRegIDdoctorModule",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "accept-language",
+						"value": "en-US,en;q=0.9"
+					},
+					{
+						"key": "authorization",
+						"value": "ccdd3e139e3ae5390ebc8a62ceeae534e7599ad525c5adc30473ed6711d76907"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json"
+					},
+					{
+						"key": "origin",
+						"value": "https://uatamrit.piramalswasthya.org"
+					},
+					{
+						"key": "priority",
+						"value": "u=1, i"
+					},
+					{
+						"key": "referer",
+						"value": "https://uatamrit.piramalswasthya.org/aam/"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Google Chrome\";v=\"143\", \"Chromium\";v=\"143\", \"Not A(Brand\";v=\"24\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Windows\""
+					},
+					{
+						"key": "sec-fetch-dest",
+						"value": "empty"
+					},
+					{
+						"key": "sec-fetch-mode",
+						"value": "cors"
+					},
+					{
+						"key": "sec-fetch-site",
+						"value": "same-origin"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "Cookie",
+						"value": "Jwttoken=eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJtb2tyb25nIiwidXNlcklkIjoiMTk1MSIsInRva2VuX3R5cGUiOiJhY2Nlc3MiLCJqdGkiOiJhNmVhN2JhNC00ODBjLTRhOGUtYjYzNC04YzcxODY0MDE3ZGQiLCJpYXQiOjE3NjgyMzY2NDMsImV4cCI6MTc2ODI2NTQ0M30.o4Tsk5-ytthD6CqTrjyJFAvRjjhZm0msaGs7mu2zr_yFo6jpk2slOoPkgEq5_a-shD0XX4IwdLUtOvO1usR3sA"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"beneficiaryRegID\":\"10468524\",\"benFlowID\":3107379}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://uatamrit.piramalswasthya.org/hwc-api/registrar/get/benDetailsByRegIDForLeftPanelNew",
+					"protocol": "https",
+					"host": [
+						"uatamrit",
+						"piramalswasthya",
+						"org"
+					],
+					"path": [
+						"hwc-api",
+						"registrar",
+						"get",
+						"benDetailsByRegIDForLeftPanelNew"
+					]
+				},
+				"description": "Generated from cURL: curl 'https://uatamrit.piramalswasthya.org/hwc-api/registrar/get/benDetailsByRegIDForLeftPanelNew' \\\r\n  -H 'accept: application/json, text/plain, */*' \\\r\n  -H 'accept-language: en-US,en;q=0.9' \\\r\n  -H 'authorization: ccdd3e139e3ae5390ebc8a62ceeae534e7599ad525c5adc30473ed6711d76907' \\\r\n  -H 'content-type: application/json' \\\r\n  -b 'Jwttoken=eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJtb2tyb25nIiwidXNlcklkIjoiMTk1MSIsInRva2VuX3R5cGUiOiJhY2Nlc3MiLCJqdGkiOiJhNmVhN2JhNC00ODBjLTRhOGUtYjYzNC04YzcxODY0MDE3ZGQiLCJpYXQiOjE3NjgyMzY2NDMsImV4cCI6MTc2ODI2NTQ0M30.o4Tsk5-ytthD6CqTrjyJFAvRjjhZm0msaGs7mu2zr_yFo6jpk2slOoPkgEq5_a-shD0XX4IwdLUtOvO1usR3sA' \\\r\n  -H 'origin: https://uatamrit.piramalswasthya.org' \\\r\n  -H 'priority: u=1, i' \\\r\n  -H 'referer: https://uatamrit.piramalswasthya.org/aam/' \\\r\n  -H 'sec-ch-ua: \"Google Chrome\";v=\"143\", \"Chromium\";v=\"143\", \"Not A(Brand\";v=\"24\"' \\\r\n  -H 'sec-ch-ua-mobile: ?0' \\\r\n  -H 'sec-ch-ua-platform: \"Windows\"' \\\r\n  -H 'sec-fetch-dest: empty' \\\r\n  -H 'sec-fetch-mode: cors' \\\r\n  -H 'sec-fetch-site: same-origin' \\\r\n  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36' \\\r\n  --data-raw '{\"beneficiaryRegID\":\"10468524\",\"benFlowID\":3107379}'"
+			},
+			"response": []
+		},
+		{
+			"name": "saveDoctorData",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "accept-language",
+						"value": "en-US,en;q=0.9"
+					},
+					{
+						"key": "authorization",
+						"value": "ccdd3e139e3ae5390ebc8a62ceeae534e7599ad525c5adc30473ed6711d76907"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json"
+					},
+					{
+						"key": "origin",
+						"value": "https://uatamrit.piramalswasthya.org"
+					},
+					{
+						"key": "priority",
+						"value": "u=1, i"
+					},
+					{
+						"key": "referer",
+						"value": "https://uatamrit.piramalswasthya.org/aam/"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Google Chrome\";v=\"143\", \"Chromium\";v=\"143\", \"Not A(Brand\";v=\"24\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Windows\""
+					},
+					{
+						"key": "sec-fetch-dest",
+						"value": "empty"
+					},
+					{
+						"key": "sec-fetch-mode",
+						"value": "cors"
+					},
+					{
+						"key": "sec-fetch-site",
+						"value": "same-origin"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "Cookie",
+						"value": "Jwttoken=eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJtb2tyb25nIiwidXNlcklkIjoiMTk1MSIsInRva2VuX3R5cGUiOiJhY2Nlc3MiLCJqdGkiOiJhNmVhN2JhNC00ODBjLTRhOGUtYjYzNC04YzcxODY0MDE3ZGQiLCJpYXQiOjE3NjgyMzY2NDMsImV4cCI6MTc2ODI2NTQ0M30.o4Tsk5-ytthD6CqTrjyJFAvRjjhZm0msaGs7mu2zr_yFo6jpk2slOoPkgEq5_a-shD0XX4IwdLUtOvO1usR3sA"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"quickConsultation\":{\"benVisitID\":2702037,\"chiefComplaintList\":[{\"chiefComplaint\":null,\"conceptID\":null,\"description\":null,\"vanID\":295,\"parkingPlaceID\":33}],\"rbsTestResult\":\"133\",\"rbsTestRemarks\":\"xyz\",\"clinicalObservation\":\"fever\",\"labTestOrders\":[{\"procedureID\":110,\"procedureName\":\"Hemoglobin\",\"procedureDesc\":\"Hemoglobin\",\"procedureType\":\"Laboratory\",\"gender\":\"unisex\",\"providerServiceMapID\":1717}],\"externalInvestigation\":null,\"prescription\":[{\"id\":null,\"drugID\":1320,\"drugName\":\"Ferrous salt (A) + Folic acid (B)\",\"drugStrength\":\"45+0.4mg\",\"formName\":\"Tablet\",\"dose\":\"Half Tab\",\"qtyPrescribed\":null,\"frequency\":\"Once Daily(OD)\",\"duration\":3,\"route\":null,\"durationView\":\"3 Day(s)\",\"unit\":\"Day(s)\",\"instructions\":null,\"sctCode\":null,\"sctTerm\":null,\"createdBy\":\"Mokrong\",\"vanID\":295,\"parkingPlaceID\":33,\"isEDL\":true},{\"id\":null,\"drugID\":1265,\"drugName\":\"Paracetamol\",\"drugStrength\":\"500mg\",\"formName\":\"Tablet\",\"dose\":\"One Tab\",\"qtyPrescribed\":null,\"frequency\":\"Twice Daily(BD)\",\"duration\":2,\"route\":null,\"durationView\":\"2 Day(s)\",\"unit\":\"Day(s)\",\"instructions\":null,\"sctCode\":null,\"sctTerm\":null,\"createdBy\":\"Mokrong\",\"vanID\":295,\"parkingPlaceID\":33,\"isEDL\":true}],\"counsellingProvided\":null,\"prescriptionID\":null,\"vanID\":295,\"parkingPlaceID\":33,\"provisionalDiagnosisList\":[{\"conceptID\":\"10151000132103\",\"term\":\"Viral fever\",\"viewProvisionalDiagnosisProvided\":{\"conceptID\":\"10151000132103\",\"term\":\"Viral fever\"}},{\"conceptID\":\"38341003\",\"term\":\"High blood pressure\",\"viewProvisionalDiagnosisProvided\":{\"conceptID\":\"38341003\",\"term\":\"High blood pressure\"}}],\"refer\":{\"referredToInstituteID\":724,\"refrredToAdditionalServiceList\":null,\"referredToInstituteName\":\"District Hospital\",\"otherReferredToInstituteName\":null,\"referralReason\":\"high fever\",\"referralReasonList\":null,\"otherReferralReason\":null,\"revisitDate\":null,\"vanID\":295,\"parkingPlaceID\":33,\"beneficiaryRegID\":10468524,\"benVisitID\":2702037,\"visitCode\":30029502702037,\"providerServiceMapID\":1717,\"createdBy\":\"Mokrong\",\"isSpecialist\":false,\"doctorSignatureFlag\":\"false\"},\"beneficiaryRegID\":10468524,\"providerServiceMapID\":1717,\"serviceID\":9,\"createdBy\":\"Mokrong\",\"benFlowID\":3107379,\"beneficiaryID\":572977517644,\"doctorFlag\":1,\"nurseFlag\":9,\"pharmacist_flag\":0,\"visitCode\":30029502702037,\"sessionID\":3,\"isSpecialist\":false,\"doctorSignatureFlag\":\"false\"}}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://uatamrit.piramalswasthya.org/hwc-api/genOPD-QC-quickConsult/save/doctorData",
+					"protocol": "https",
+					"host": [
+						"uatamrit",
+						"piramalswasthya",
+						"org"
+					],
+					"path": [
+						"hwc-api",
+						"genOPD-QC-quickConsult",
+						"save",
+						"doctorData"
+					]
+				},
+				"description": "Generated from cURL: curl 'https://uatamrit.piramalswasthya.org/hwc-api/genOPD-QC-quickConsult/save/doctorData' \\\r\n  -H 'accept: application/json, text/plain, */*' \\\r\n  -H 'accept-language: en-US,en;q=0.9' \\\r\n  -H 'authorization: ccdd3e139e3ae5390ebc8a62ceeae534e7599ad525c5adc30473ed6711d76907' \\\r\n  -H 'content-type: application/json' \\\r\n  -b 'Jwttoken=eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJtb2tyb25nIiwidXNlcklkIjoiMTk1MSIsInRva2VuX3R5cGUiOiJhY2Nlc3MiLCJqdGkiOiJhNmVhN2JhNC00ODBjLTRhOGUtYjYzNC04YzcxODY0MDE3ZGQiLCJpYXQiOjE3NjgyMzY2NDMsImV4cCI6MTc2ODI2NTQ0M30.o4Tsk5-ytthD6CqTrjyJFAvRjjhZm0msaGs7mu2zr_yFo6jpk2slOoPkgEq5_a-shD0XX4IwdLUtOvO1usR3sA' \\\r\n  -H 'origin: https://uatamrit.piramalswasthya.org' \\\r\n  -H 'priority: u=1, i' \\\r\n  -H 'referer: https://uatamrit.piramalswasthya.org/aam/' \\\r\n  -H 'sec-ch-ua: \"Google Chrome\";v=\"143\", \"Chromium\";v=\"143\", \"Not A(Brand\";v=\"24\"' \\\r\n  -H 'sec-ch-ua-mobile: ?0' \\\r\n  -H 'sec-ch-ua-platform: \"Windows\"' \\\r\n  -H 'sec-fetch-dest: empty' \\\r\n  -H 'sec-fetch-mode: cors' \\\r\n  -H 'sec-fetch-site: same-origin' \\\r\n  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36' \\\r\n  --data-raw '{\"quickConsultation\":{\"benVisitID\":2702037,\"chiefComplaintList\":[{\"chiefComplaint\":null,\"conceptID\":null,\"description\":null,\"vanID\":295,\"parkingPlaceID\":33}],\"rbsTestResult\":\"133\",\"rbsTestRemarks\":\"xyz\",\"clinicalObservation\":\"fever\",\"labTestOrders\":[{\"procedureID\":110,\"procedureName\":\"Hemoglobin\",\"procedureDesc\":\"Hemoglobin\",\"procedureType\":\"Laboratory\",\"gender\":\"unisex\",\"providerServiceMapID\":1717}],\"externalInvestigation\":null,\"prescription\":[{\"id\":null,\"drugID\":1320,\"drugName\":\"Ferrous salt (A) + Folic acid (B)\",\"drugStrength\":\"45+0.4mg\",\"formName\":\"Tablet\",\"dose\":\"Half Tab\",\"qtyPrescribed\":null,\"frequency\":\"Once Daily(OD)\",\"duration\":3,\"route\":null,\"durationView\":\"3 Day(s)\",\"unit\":\"Day(s)\",\"instructions\":null,\"sctCode\":null,\"sctTerm\":null,\"createdBy\":\"Mokrong\",\"vanID\":295,\"parkingPlaceID\":33,\"isEDL\":true},{\"id\":null,\"drugID\":1265,\"drugName\":\"Paracetamol\",\"drugStrength\":\"500mg\",\"formName\":\"Tablet\",\"dose\":\"One Tab\",\"qtyPrescribed\":null,\"frequency\":\"Twice Daily(BD)\",\"duration\":2,\"route\":null,\"durationView\":\"2 Day(s)\",\"unit\":\"Day(s)\",\"instructions\":null,\"sctCode\":null,\"sctTerm\":null,\"createdBy\":\"Mokrong\",\"vanID\":295,\"parkingPlaceID\":33,\"isEDL\":true}],\"counsellingProvided\":null,\"prescriptionID\":null,\"vanID\":295,\"parkingPlaceID\":33,\"provisionalDiagnosisList\":[{\"conceptID\":\"10151000132103\",\"term\":\"Viral fever\",\"viewProvisionalDiagnosisProvided\":{\"conceptID\":\"10151000132103\",\"term\":\"Viral fever\"}},{\"conceptID\":\"38341003\",\"term\":\"High blood pressure\",\"viewProvisionalDiagnosisProvided\":{\"conceptID\":\"38341003\",\"term\":\"High blood pressure\"}}],\"refer\":{\"referredToInstituteID\":724,\"refrredToAdditionalServiceList\":null,\"referredToInstituteName\":\"District Hospital\",\"otherReferredToInstituteName\":null,\"referralReason\":\"high fever\",\"referralReasonList\":null,\"otherReferralReason\":null,\"revisitDate\":null,\"vanID\":295,\"parkingPlaceID\":33,\"beneficiaryRegID\":10468524,\"benVisitID\":2702037,\"visitCode\":30029502702037,\"providerServiceMapID\":1717,\"createdBy\":\"Mokrong\",\"isSpecialist\":false,\"doctorSignatureFlag\":\"false\"},\"beneficiaryRegID\":10468524,\"providerServiceMapID\":1717,\"serviceID\":9,\"createdBy\":\"Mokrong\",\"benFlowID\":3107379,\"beneficiaryID\":572977517644,\"doctorFlag\":1,\"nurseFlag\":9,\"pharmacist_flag\":0,\"visitCode\":30029502702037,\"sessionID\":3,\"isSpecialist\":false,\"doctorSignatureFlag\":\"false\"}}'"
+			},
+			"response": []
+		},
+		{
+			"name": "getPrescribedProceduresList",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "accept-language",
+						"value": "en-US,en;q=0.9"
+					},
+					{
+						"key": "authorization",
+						"value": "ccdd3e139e3ae5390ebc8a62ceeae534e7599ad525c5adc30473ed6711d76907"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json"
+					},
+					{
+						"key": "origin",
+						"value": "https://uatamrit.piramalswasthya.org"
+					},
+					{
+						"key": "priority",
+						"value": "u=1, i"
+					},
+					{
+						"key": "referer",
+						"value": "https://uatamrit.piramalswasthya.org/aam/"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Google Chrome\";v=\"143\", \"Chromium\";v=\"143\", \"Not A(Brand\";v=\"24\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Windows\""
+					},
+					{
+						"key": "sec-fetch-dest",
+						"value": "empty"
+					},
+					{
+						"key": "sec-fetch-mode",
+						"value": "cors"
+					},
+					{
+						"key": "sec-fetch-site",
+						"value": "same-origin"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "Cookie",
+						"value": "Jwttoken=eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJtb2tyb25nIiwidXNlcklkIjoiMTk1MSIsInRva2VuX3R5cGUiOiJhY2Nlc3MiLCJqdGkiOiJhNmVhN2JhNC00ODBjLTRhOGUtYjYzNC04YzcxODY0MDE3ZGQiLCJpYXQiOjE3NjgyMzY2NDMsImV4cCI6MTc2ODI2NTQ0M30.o4Tsk5-ytthD6CqTrjyJFAvRjjhZm0msaGs7mu2zr_yFo6jpk2slOoPkgEq5_a-shD0XX4IwdLUtOvO1usR3sA"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"beneficiaryRegID\":10468524,\"benVisitID\":2702037,\"visitCode\":30029502702037}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://uatamrit.piramalswasthya.org/hwc-api/labTechnician/get/prescribedProceduresList",
+					"protocol": "https",
+					"host": [
+						"uatamrit",
+						"piramalswasthya",
+						"org"
+					],
+					"path": [
+						"hwc-api",
+						"labTechnician",
+						"get",
+						"prescribedProceduresList"
+					]
+				},
+				"description": "Generated from cURL: curl 'https://uatamrit.piramalswasthya.org/hwc-api/labTechnician/get/prescribedProceduresList' \\\r\n  -H 'accept: application/json, text/plain, */*' \\\r\n  -H 'accept-language: en-US,en;q=0.9' \\\r\n  -H 'authorization: ccdd3e139e3ae5390ebc8a62ceeae534e7599ad525c5adc30473ed6711d76907' \\\r\n  -H 'content-type: application/json' \\\r\n  -b 'Jwttoken=eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJtb2tyb25nIiwidXNlcklkIjoiMTk1MSIsInRva2VuX3R5cGUiOiJhY2Nlc3MiLCJqdGkiOiJhNmVhN2JhNC00ODBjLTRhOGUtYjYzNC04YzcxODY0MDE3ZGQiLCJpYXQiOjE3NjgyMzY2NDMsImV4cCI6MTc2ODI2NTQ0M30.o4Tsk5-ytthD6CqTrjyJFAvRjjhZm0msaGs7mu2zr_yFo6jpk2slOoPkgEq5_a-shD0XX4IwdLUtOvO1usR3sA' \\\r\n  -H 'origin: https://uatamrit.piramalswasthya.org' \\\r\n  -H 'priority: u=1, i' \\\r\n  -H 'referer: https://uatamrit.piramalswasthya.org/aam/' \\\r\n  -H 'sec-ch-ua: \"Google Chrome\";v=\"143\", \"Chromium\";v=\"143\", \"Not A(Brand\";v=\"24\"' \\\r\n  -H 'sec-ch-ua-mobile: ?0' \\\r\n  -H 'sec-ch-ua-platform: \"Windows\"' \\\r\n  -H 'sec-fetch-dest: empty' \\\r\n  -H 'sec-fetch-mode: cors' \\\r\n  -H 'sec-fetch-site: same-origin' \\\r\n  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36' \\\r\n  --data-raw '{\"beneficiaryRegID\":10468524,\"benVisitID\":2702037,\"visitCode\":30029502702037}'"
+			},
+			"response": []
+		},
+		{
+			"name": "GetBenDetailsByRegIDLeboratoryModule",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "accept-language",
+						"value": "en-US,en;q=0.9"
+					},
+					{
+						"key": "authorization",
+						"value": "ccdd3e139e3ae5390ebc8a62ceeae534e7599ad525c5adc30473ed6711d76907"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json"
+					},
+					{
+						"key": "origin",
+						"value": "https://uatamrit.piramalswasthya.org"
+					},
+					{
+						"key": "priority",
+						"value": "u=1, i"
+					},
+					{
+						"key": "referer",
+						"value": "https://uatamrit.piramalswasthya.org/aam/"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Google Chrome\";v=\"143\", \"Chromium\";v=\"143\", \"Not A(Brand\";v=\"24\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Windows\""
+					},
+					{
+						"key": "sec-fetch-dest",
+						"value": "empty"
+					},
+					{
+						"key": "sec-fetch-mode",
+						"value": "cors"
+					},
+					{
+						"key": "sec-fetch-site",
+						"value": "same-origin"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "Cookie",
+						"value": "Jwttoken=eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJtb2tyb25nIiwidXNlcklkIjoiMTk1MSIsInRva2VuX3R5cGUiOiJhY2Nlc3MiLCJqdGkiOiJhNmVhN2JhNC00ODBjLTRhOGUtYjYzNC04YzcxODY0MDE3ZGQiLCJpYXQiOjE3NjgyMzY2NDMsImV4cCI6MTc2ODI2NTQ0M30.o4Tsk5-ytthD6CqTrjyJFAvRjjhZm0msaGs7mu2zr_yFo6jpk2slOoPkgEq5_a-shD0XX4IwdLUtOvO1usR3sA"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"beneficiaryRegID\":\"10468524\",\"benFlowID\":3107379}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://uatamrit.piramalswasthya.org/hwc-api/registrar/get/benDetailsByRegIDForLeftPanelNew",
+					"protocol": "https",
+					"host": [
+						"uatamrit",
+						"piramalswasthya",
+						"org"
+					],
+					"path": [
+						"hwc-api",
+						"registrar",
+						"get",
+						"benDetailsByRegIDForLeftPanelNew"
+					]
+				},
+				"description": "Generated from cURL: curl 'https://uatamrit.piramalswasthya.org/hwc-api/registrar/get/benDetailsByRegIDForLeftPanelNew' \\\r\n  -H 'accept: application/json, text/plain, */*' \\\r\n  -H 'accept-language: en-US,en;q=0.9' \\\r\n  -H 'authorization: ccdd3e139e3ae5390ebc8a62ceeae534e7599ad525c5adc30473ed6711d76907' \\\r\n  -H 'content-type: application/json' \\\r\n  -b 'Jwttoken=eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJtb2tyb25nIiwidXNlcklkIjoiMTk1MSIsInRva2VuX3R5cGUiOiJhY2Nlc3MiLCJqdGkiOiJhNmVhN2JhNC00ODBjLTRhOGUtYjYzNC04YzcxODY0MDE3ZGQiLCJpYXQiOjE3NjgyMzY2NDMsImV4cCI6MTc2ODI2NTQ0M30.o4Tsk5-ytthD6CqTrjyJFAvRjjhZm0msaGs7mu2zr_yFo6jpk2slOoPkgEq5_a-shD0XX4IwdLUtOvO1usR3sA' \\\r\n  -H 'origin: https://uatamrit.piramalswasthya.org' \\\r\n  -H 'priority: u=1, i' \\\r\n  -H 'referer: https://uatamrit.piramalswasthya.org/aam/' \\\r\n  -H 'sec-ch-ua: \"Google Chrome\";v=\"143\", \"Chromium\";v=\"143\", \"Not A(Brand\";v=\"24\"' \\\r\n  -H 'sec-ch-ua-mobile: ?0' \\\r\n  -H 'sec-ch-ua-platform: \"Windows\"' \\\r\n  -H 'sec-fetch-dest: empty' \\\r\n  -H 'sec-fetch-mode: cors' \\\r\n  -H 'sec-fetch-site: same-origin' \\\r\n  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36' \\\r\n  --data-raw '{\"beneficiaryRegID\":\"10468524\",\"benFlowID\":3107379}'"
+			},
+			"response": []
+		},
+		{
+			"name": "saveLabTestResult",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "accept-language",
+						"value": "en-US,en;q=0.9"
+					},
+					{
+						"key": "authorization",
+						"value": "ccdd3e139e3ae5390ebc8a62ceeae534e7599ad525c5adc30473ed6711d76907"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json"
+					},
+					{
+						"key": "origin",
+						"value": "https://uatamrit.piramalswasthya.org"
+					},
+					{
+						"key": "priority",
+						"value": "u=1, i"
+					},
+					{
+						"key": "referer",
+						"value": "https://uatamrit.piramalswasthya.org/aam/"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Google Chrome\";v=\"143\", \"Chromium\";v=\"143\", \"Not A(Brand\";v=\"24\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Windows\""
+					},
+					{
+						"key": "sec-fetch-dest",
+						"value": "empty"
+					},
+					{
+						"key": "sec-fetch-mode",
+						"value": "cors"
+					},
+					{
+						"key": "sec-fetch-site",
+						"value": "same-origin"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "Cookie",
+						"value": "Jwttoken=eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJtb2tyb25nIiwidXNlcklkIjoiMTk1MSIsInRva2VuX3R5cGUiOiJhY2Nlc3MiLCJqdGkiOiJhNmVhN2JhNC00ODBjLTRhOGUtYjYzNC04YzcxODY0MDE3ZGQiLCJpYXQiOjE3NjgyMzY2NDMsImV4cCI6MTc2ODI2NTQ0M30.o4Tsk5-ytthD6CqTrjyJFAvRjjhZm0msaGs7mu2zr_yFo6jpk2slOoPkgEq5_a-shD0XX4IwdLUtOvO1usR3sA"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"labTestResults\":[],\"radiologyTestResults\":[],\"labCompleted\":true,\"createdBy\":\"Mokrong\",\"doctorFlag\":2,\"nurseFlag\":9,\"beneficiaryRegID\":10468524,\"beneficiaryID\":572977517644,\"benFlowID\":3107379,\"visitID\":2702037,\"visitCode\":30029502702037,\"providerServiceMapID\":1717,\"specialist_flag\":null,\"vanID\":295,\"parkingPlaceID\":33}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://uatamrit.piramalswasthya.org/hwc-api/labTechnician/save/LabTestResult",
+					"protocol": "https",
+					"host": [
+						"uatamrit",
+						"piramalswasthya",
+						"org"
+					],
+					"path": [
+						"hwc-api",
+						"labTechnician",
+						"save",
+						"LabTestResult"
+					]
+				},
+				"description": "Generated from cURL: curl 'https://uatamrit.piramalswasthya.org/hwc-api/labTechnician/save/LabTestResult' \\\r\n  -H 'accept: application/json, text/plain, */*' \\\r\n  -H 'accept-language: en-US,en;q=0.9' \\\r\n  -H 'authorization: ccdd3e139e3ae5390ebc8a62ceeae534e7599ad525c5adc30473ed6711d76907' \\\r\n  -H 'content-type: application/json' \\\r\n  -b 'Jwttoken=eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJtb2tyb25nIiwidXNlcklkIjoiMTk1MSIsInRva2VuX3R5cGUiOiJhY2Nlc3MiLCJqdGkiOiJhNmVhN2JhNC00ODBjLTRhOGUtYjYzNC04YzcxODY0MDE3ZGQiLCJpYXQiOjE3NjgyMzY2NDMsImV4cCI6MTc2ODI2NTQ0M30.o4Tsk5-ytthD6CqTrjyJFAvRjjhZm0msaGs7mu2zr_yFo6jpk2slOoPkgEq5_a-shD0XX4IwdLUtOvO1usR3sA' \\\r\n  -H 'origin: https://uatamrit.piramalswasthya.org' \\\r\n  -H 'priority: u=1, i' \\\r\n  -H 'referer: https://uatamrit.piramalswasthya.org/aam/' \\\r\n  -H 'sec-ch-ua: \"Google Chrome\";v=\"143\", \"Chromium\";v=\"143\", \"Not A(Brand\";v=\"24\"' \\\r\n  -H 'sec-ch-ua-mobile: ?0' \\\r\n  -H 'sec-ch-ua-platform: \"Windows\"' \\\r\n  -H 'sec-fetch-dest: empty' \\\r\n  -H 'sec-fetch-mode: cors' \\\r\n  -H 'sec-fetch-site: same-origin' \\\r\n  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36' \\\r\n  --data-raw '{\"labTestResults\":[],\"radiologyTestResults\":[],\"labCompleted\":true,\"createdBy\":\"Mokrong\",\"doctorFlag\":2,\"nurseFlag\":9,\"beneficiaryRegID\":10468524,\"beneficiaryID\":572977517644,\"benFlowID\":3107379,\"visitID\":2702037,\"visitCode\":30029502702037,\"providerServiceMapID\":1717,\"specialist_flag\":null,\"vanID\":295,\"parkingPlaceID\":33}'"
+			},
+			"response": []
+		},
+		{
+			"name": "GetBenDetailsByRegIDPharmacist",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "accept-language",
+						"value": "en-US,en;q=0.9"
+					},
+					{
+						"key": "authorization",
+						"value": "ccdd3e139e3ae5390ebc8a62ceeae534e7599ad525c5adc30473ed6711d76907"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json"
+					},
+					{
+						"key": "origin",
+						"value": "https://uatamrit.piramalswasthya.org"
+					},
+					{
+						"key": "priority",
+						"value": "u=1, i"
+					},
+					{
+						"key": "referer",
+						"value": "https://uatamrit.piramalswasthya.org/aam-inventory/"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Google Chrome\";v=\"143\", \"Chromium\";v=\"143\", \"Not A(Brand\";v=\"24\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Windows\""
+					},
+					{
+						"key": "sec-fetch-dest",
+						"value": "empty"
+					},
+					{
+						"key": "sec-fetch-mode",
+						"value": "cors"
+					},
+					{
+						"key": "sec-fetch-site",
+						"value": "same-origin"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "Cookie",
+						"value": "Jwttoken=eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJtb2tyb25nIiwidXNlcklkIjoiMTk1MSIsInRva2VuX3R5cGUiOiJhY2Nlc3MiLCJqdGkiOiJhNmVhN2JhNC00ODBjLTRhOGUtYjYzNC04YzcxODY0MDE3ZGQiLCJpYXQiOjE3NjgyMzY2NDMsImV4cCI6MTc2ODI2NTQ0M30.o4Tsk5-ytthD6CqTrjyJFAvRjjhZm0msaGs7mu2zr_yFo6jpk2slOoPkgEq5_a-shD0XX4IwdLUtOvO1usR3sA"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"beneficiaryRegID\":\"10468405\",\"benFlowID\":\"3107254\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://uatamrit.piramalswasthya.org/hwc-api/registrar/get/benDetailsByRegIDForLeftPanelNew",
+					"protocol": "https",
+					"host": [
+						"uatamrit",
+						"piramalswasthya",
+						"org"
+					],
+					"path": [
+						"hwc-api",
+						"registrar",
+						"get",
+						"benDetailsByRegIDForLeftPanelNew"
+					]
+				},
+				"description": "Generated from cURL: curl 'https://uatamrit.piramalswasthya.org/hwc-api/registrar/get/benDetailsByRegIDForLeftPanelNew' \\\r\n  -H 'accept: application/json, text/plain, */*' \\\r\n  -H 'accept-language: en-US,en;q=0.9' \\\r\n  -H 'authorization: ccdd3e139e3ae5390ebc8a62ceeae534e7599ad525c5adc30473ed6711d76907' \\\r\n  -H 'content-type: application/json' \\\r\n  -b 'Jwttoken=eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJtb2tyb25nIiwidXNlcklkIjoiMTk1MSIsInRva2VuX3R5cGUiOiJhY2Nlc3MiLCJqdGkiOiJhNmVhN2JhNC00ODBjLTRhOGUtYjYzNC04YzcxODY0MDE3ZGQiLCJpYXQiOjE3NjgyMzY2NDMsImV4cCI6MTc2ODI2NTQ0M30.o4Tsk5-ytthD6CqTrjyJFAvRjjhZm0msaGs7mu2zr_yFo6jpk2slOoPkgEq5_a-shD0XX4IwdLUtOvO1usR3sA' \\\r\n  -H 'origin: https://uatamrit.piramalswasthya.org' \\\r\n  -H 'priority: u=1, i' \\\r\n  -H 'referer: https://uatamrit.piramalswasthya.org/aam-inventory/' \\\r\n  -H 'sec-ch-ua: \"Google Chrome\";v=\"143\", \"Chromium\";v=\"143\", \"Not A(Brand\";v=\"24\"' \\\r\n  -H 'sec-ch-ua-mobile: ?0' \\\r\n  -H 'sec-ch-ua-platform: \"Windows\"' \\\r\n  -H 'sec-fetch-dest: empty' \\\r\n  -H 'sec-fetch-mode: cors' \\\r\n  -H 'sec-fetch-site: same-origin' \\\r\n  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36' \\\r\n  --data-raw '{\"beneficiaryRegID\":\"10468405\",\"benFlowID\":\"3107254\"}'"
+			},
+			"response": []
+		},
+		{
+			"name": "ANCsaveNurseData",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "accept-language",
+						"value": "en-US,en;q=0.9"
+					},
+					{
+						"key": "authorization",
+						"value": "da144d25aff62a946caf65faad4b743f9d01cc0ca87ab594a166035e14911f22"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json"
+					},
+					{
+						"key": "origin",
+						"value": "https://uatamrit.piramalswasthya.org"
+					},
+					{
+						"key": "priority",
+						"value": "u=1, i"
+					},
+					{
+						"key": "referer",
+						"value": "https://uatamrit.piramalswasthya.org/aam/"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Google Chrome\";v=\"143\", \"Chromium\";v=\"143\", \"Not A(Brand\";v=\"24\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Windows\""
+					},
+					{
+						"key": "sec-fetch-dest",
+						"value": "empty"
+					},
+					{
+						"key": "sec-fetch-mode",
+						"value": "cors"
+					},
+					{
+						"key": "sec-fetch-site",
+						"value": "same-origin"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "Cookie",
+						"value": "Jwttoken=eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJtb2tyb25nIiwidXNlcklkIjoiMTk1MSIsInRva2VuX3R5cGUiOiJhY2Nlc3MiLCJqdGkiOiJhNmVhN2JhNC00ODBjLTRhOGUtYjYzNC04YzcxODY0MDE3ZGQiLCJpYXQiOjE3NjgyMzY2NDMsImV4cCI6MTc2ODI2NTQ0M30.o4Tsk5-ytthD6CqTrjyJFAvRjjhZm0msaGs7mu2zr_yFo6jpk2slOoPkgEq5_a-shD0XX4IwdLUtOvO1usR3sA"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"visitDetails\":{\"visitDetails\":{\"beneficiaryRegID\":10468523,\"providerServiceMapID\":1717,\"visitNo\":null,\"visitReason\":\"New Chief Complaint\",\"subVisitCategory\":null,\"visitCategory\":\"ANC\",\"pregnancyStatus\":\"Yes\",\"followUpForFpMethod\":null,\"otherFollowUpForFpMethod\":null,\"sideEffects\":null,\"otherSideEffects\":null,\"IdrsOrCbac\":\"CBAC\",\"rCHID\":null,\"healthFacilityType\":null,\"healthFacilityLocation\":null,\"reportFilePath\":null,\"createdBy\":\"Mokrong\",\"vanID\":295,\"parkingPlaceID\":33,\"fileIDs\":null},\"chiefComplaints\":[{\"beneficiaryRegID\":10468523,\"benVisitID\":null,\"providerServiceMapID\":1717,\"conceptID\":\"161891005\",\"chiefComplaint\":\"Back Pain\",\"chiefComplaintID\":29,\"duration\":\"2\",\"unitOfDuration\":\"Days\",\"description\":null,\"createdBy\":\"Mokrong\",\"vanID\":295,\"parkingPlaceID\":33},{\"beneficiaryRegID\":10468523,\"benVisitID\":null,\"providerServiceMapID\":1717,\"conceptID\":null,\"chiefComplaint\":null,\"chiefComplaintID\":null,\"createdBy\":\"Mokrong\",\"vanID\":295,\"parkingPlaceID\":33}],\"adherence\":{\"beneficiaryRegID\":10468523,\"benVisitID\":null,\"providerServiceMapID\":1717,\"createdBy\":\"Mokrong\",\"toDrugs\":null,\"drugReason\":null,\"toReferral\":null,\"referralReason\":null,\"progress\":null,\"vanID\":295,\"parkingPlaceID\":33},\"cdss\":{\"presentChiefComplaintDb\":{\"presentChiefComplaint\":null,\"presentChiefComplaintID\":null,\"selectedDiagnosis\":null,\"selectedProvisionalDiagnosisID\":null,\"recommendedActionPc\":null,\"remarksPc\":null,\"presentChiefComplaintView\":null},\"diseaseSummaryDb\":{\"diseaseSummary\":null,\"diseasesummaryID\":null,\"recommendedAction\":null,\"remarks\":null,\"informationGiven\":null,\"diseaseSummaryView\":null},\"providerServiceMapID\":1717,\"vanID\":295,\"parkingPlaceID\":33,\"beneficiaryRegID\":10468523,\"benVisitID\":null,\"createdBy\":\"Mokrong\"},\"investigation\":{\"beneficiaryRegID\":10468523,\"benVisitID\":null,\"providerServiceMapID\":1717,\"createdBy\":\"Mokrong\",\"laboratoryList\":[{\"procedureID\":110,\"procedureName\":\"Hemoglobin\",\"procedureDesc\":\"Hemoglobin\",\"procedureType\":\"Laboratory\",\"gender\":\"unisex\",\"providerServiceMapID\":1717}],\"vanID\":295,\"parkingPlaceID\":33}},\"ancDetails\":{\"ancObstetricDetails\":{\"beneficiaryRegID\":10468523,\"benVisitID\":null,\"providerServiceMapID\":1717,\"createdBy\":\"Mokrong\",\"primiGravida\":false,\"lmpDate\":\"2025-10-06T00:00:00.000Z\",\"gestationalAgeOrPeriodofAmenorrhea_POA\":14,\"expDelDt\":\"2026-07-12T18:30:00.000Z\",\"duration\":3,\"trimesterNumber\":2,\"bloodGroup\":null,\"vanID\":295,\"parkingPlaceID\":33,\"gravida_G\":1,\"para\":null,\"abortions_A\":null,\"stillBirth\":null,\"livebirths_L\":null},\"ancImmunization\":{\"tT_1Status\":null,\"dateReceivedForTT_1\":null,\"facilityNameOfTT_1\":null,\"tT_2Status\":null,\"dateReceivedForTT_2\":null,\"facilityNameOfTT_2\":null,\"tT_3Status\":null,\"dateReceivedForTT_3\":null,\"facilityNameOfTT_3\":null,\"beneficiaryRegID\":10468523,\"benVisitID\":null,\"providerServiceMapID\":1717,\"createdBy\":\"Mokrong\",\"vanID\":295,\"parkingPlaceID\":33}},\"vitalDetails\":{\"beneficiaryRegID\":10468523,\"benVisitID\":null,\"providerServiceMapID\":1717,\"weight_Kg\":\"56\",\"height_cm\":\"156\",\"waistCircumference_cm\":null,\"hipCircumference_cm\":null,\"bMI\":23,\"waistHipRatio\":null,\"headCircumference_cm\":null,\"midUpperArmCircumference_MUAC_cm\":null,\"temperature\":\"98\",\"pulseRate\":null,\"sPO2\":null,\"systolicBP_1stReading\":\"120\",\"diastolicBP_1stReading\":\"80\",\"bloodGlucose_Fasting\":null,\"bloodGlucose_Random\":null,\"bloodGlucose_2hr_PP\":null,\"respiratoryRate\":null,\"rbsTestResult\":null,\"rbsTestRemarks\":null,\"rbsCheckBox\":true,\"hemoglobin\":null,\"createdBy\":\"Mokrong\",\"frequentCoughChecked\":null,\"sputumChecked\":null,\"coughAtNightChecked\":null,\"wheezingChecked\":null,\"painInChestChecked\":null,\"shortnessOfBreathChecked\":null,\"vanID\":295,\"parkingPlaceID\":33},\"historyDetails\":{\"pastHistory\":{\"vanID\":295,\"parkingPlaceID\":33,\"pastIllness\":[{\"illnessTypeID\":null,\"illnessType\":null,\"otherIllnessType\":null}],\"pastSurgery\":[{\"surgeryID\":null,\"surgeryType\":null,\"otherSurgeryType\":null}],\"beneficiaryRegID\":\"10468523\",\"benVisitID\":null,\"providerServiceMapID\":1717,\"createdBy\":\"Mokrong\"},\"comorbidConditions\":{\"vanID\":295,\"parkingPlaceID\":33,\"comorbidityConcurrentConditionsList\":[{\"comorbidConditions\":null,\"otherComorbidCondition\":null}],\"beneficiaryRegID\":\"10468523\",\"benVisitID\":null,\"providerServiceMapID\":1717,\"createdBy\":\"Mokrong\"},\"medicationHistory\":{\"vanID\":295,\"parkingPlaceID\":33,\"medicationHistoryList\":[{\"currentMedication\":null}],\"beneficiaryRegID\":\"10468523\",\"benVisitID\":null,\"providerServiceMapID\":1717,\"createdBy\":\"Mokrong\"},\"femaleObstetricHistory\":{\"totalNoOfPreg\":null,\"vanID\":295,\"parkingPlaceID\":33,\"complicationPregList\":[],\"beneficiaryRegID\":\"10468523\",\"benVisitID\":null,\"providerServiceMapID\":1717,\"createdBy\":\"Mokrong\",\"femaleObstetricHistoryList\":[]},\"menstrualHistory\":{\"menstrualCycleStatus\":\"Amenorrhea\",\"menstrualCycleStatusID\":\"1\",\"regularity\":null,\"cycleLength\":null,\"menstrualCyclelengthID\":null,\"menstrualFlowDurationID\":null,\"bloodFlowDuration\":null,\"menstrualProblemList\":null,\"lMPDate\":\"2025-10-06T00:00:00.000Z\",\"vanID\":295,\"parkingPlaceID\":33,\"beneficiaryRegID\":\"10468523\",\"benVisitID\":null,\"providerServiceMapID\":1717,\"createdBy\":\"Mokrong\"},\"familyHistory\":{\"familyDiseaseList\":[{\"diseaseTypeID\":null,\"diseaseType\":null,\"otherDiseaseType\":null,\"snomedCode\":null,\"snomedTerm\":null}],\"isGeneticDisorder\":null,\"geneticDisorder\":null,\"isConsanguineousMarrige\":null,\"vanID\":295,\"parkingPlaceID\":33,\"beneficiaryRegID\":\"10468523\",\"benVisitID\":null,\"providerServiceMapID\":1717,\"createdBy\":\"Mokrong\"},\"personalHistory\":{\"dietaryType\":null,\"physicalActivityType\":null,\"riskySexualPracticesStatus\":null,\"tobaccoUseStatus\":null,\"alcoholIntakeStatus\":null,\"allergyStatus\":null,\"vanID\":null,\"parkingPlaceID\":null,\"tobaccoList\":[{\"tobaccoUseTypeID\":null,\"tobaccoUseType\":null,\"otherTobaccoUseType\":null,\"numberperDay\":null,\"numberperWeek\":null}],\"alcoholList\":[{\"alcoholTypeID\":null,\"typeOfAlcohol\":null,\"otherAlcoholType\":null}],\"allergicList\":[{\"allergyType\":null,\"allergyName\":null,\"snomedCode\":null,\"otherAllergicReaction\":null,\"enableOtherAllergy\":false}],\"beneficiaryRegID\":\"10468523\",\"benVisitID\":null,\"providerServiceMapID\":1717,\"createdBy\":\"Mokrong\"}},\"examinationDetails\":{\"generalExamination\":{\"consciousness\":null,\"coherence\":null,\"cooperation\":null,\"comfortness\":null,\"builtAndAppearance\":null,\"gait\":null,\"dangerSigns\":null,\"typeOfDangerSigns\":null,\"pallor\":null,\"quickening\":null,\"foetalMovements\":null,\"jaundice\":null,\"cyanosis\":null,\"clubbing\":null,\"lymphadenopathy\":null,\"lymphnodesInvolved\":null,\"typeOfLymphadenopathy\":null,\"edema\":null,\"extentOfEdema\":null,\"edemaType\":null,\"vanID\":295,\"parkingPlaceID\":33,\"beneficiaryRegID\":10468523,\"benVisitID\":null,\"providerServiceMapID\":1717,\"createdBy\":\"Mokrong\"},\"headToToeExamination\":{\"headtoToeExam\":null,\"head\":null,\"eyes\":null,\"ears\":null,\"nose\":null,\"oralCavity\":null,\"throat\":null,\"breastAndNipples\":null,\"nipples\":null,\"trunk\":null,\"upperLimbs\":null,\"lowerLimbs\":null,\"skin\":null,\"hair\":null,\"nails\":null,\"vanID\":295,\"parkingPlaceID\":33,\"beneficiaryRegID\":10468523,\"benVisitID\":null,\"providerServiceMapID\":1717,\"createdBy\":\"Mokrong\"},\"cardioVascularExamination\":{\"jugularVenousPulse_JVP\":null,\"apexbeatLocation\":null,\"apexbeatType\":null,\"firstHeartSound_S1\":null,\"secondHeartSound_S2\":null,\"additionalHeartSounds\":null,\"murmurs\":null,\"pericardialRub\":null,\"vanID\":295,\"parkingPlaceID\":33,\"beneficiaryRegID\":10468523,\"benVisitID\":null,\"providerServiceMapID\":1717,\"createdBy\":\"Mokrong\"},\"respiratorySystemExamination\":{\"trachea\":null,\"inspection\":null,\"signsOfRespiratoryDistress\":null,\"palpation\":null,\"auscultation_Stridor\":null,\"auscultation_BreathSounds\":null,\"auscultation_Crepitations\":null,\"auscultation_Wheezing\":null,\"auscultation_PleuralRub\":null,\"auscultation_ConductedSounds\":null,\"percussion\":null,\"vanID\":295,\"parkingPlaceID\":33,\"beneficiaryRegID\":10468523,\"benVisitID\":null,\"providerServiceMapID\":1717,\"createdBy\":\"Mokrong\"},\"centralNervousSystemExamination\":{\"handedness\":null,\"cranialNervesExamination\":null,\"motorSystem\":null,\"sensorySystem\":null,\"autonomicSystem\":null,\"cerebellarSigns\":null,\"signsOfMeningealIrritation\":null,\"skull\":null,\"vanID\":295,\"parkingPlaceID\":33,\"beneficiaryRegID\":10468523,\"benVisitID\":null,\"providerServiceMapID\":1717,\"createdBy\":\"Mokrong\"},\"musculoskeletalSystemExamination\":{\"joint_TypeOfJoint\":null,\"joint_Laterality\":null,\"joint_Abnormality\":null,\"upperLimb_Laterality\":null,\"upperLimb_Abnormality\":null,\"lowerLimb_Laterality\":null,\"lowerLimb_Abnormality\":null,\"chestWall\":null,\"spine\":null,\"vanID\":295,\"parkingPlaceID\":33,\"beneficiaryRegID\":10468523,\"benVisitID\":null,\"providerServiceMapID\":1717,\"createdBy\":\"Mokrong\"},\"genitoUrinarySystemExamination\":{\"renalAngle\":null,\"suprapubicRegion\":null,\"externalGenitalia\":null,\"vanID\":295,\"parkingPlaceID\":33,\"beneficiaryRegID\":10468523,\"benVisitID\":null,\"providerServiceMapID\":1717,\"createdBy\":\"Mokrong\"},\"obstetricExamination\":{\"fundalHeight\":\"12th Week\",\"fHAndPOA_Status\":\"FH=POA\",\"fHAndPOA_Interpretation\":\"Corresponding\",\"fetalMovements\":\"Present\",\"fetalHeartSounds\":\"Audible\",\"fetalHeartRate_BeatsPerMinute\":null,\"fetalPositionOrLie\":\"Longitudinal\",\"fetalPresentation\":null,\"abdominalScars\":null,\"sfh\":null,\"malPresentation\":\"true\",\"lowLyingPlacenta\":\"true\",\"vertebralDeformity\":\"true\",\"isHRP\":true,\"reasonsForHRP\":[\"Low Lying Placenta\",\"Mal Presentation\",\"Vertebral Deformity\"],\"vanID\":295,\"parkingPlaceID\":33,\"beneficiaryRegID\":10468523,\"benVisitID\":null,\"providerServiceMapID\":1717,\"createdBy\":\"Mokrong\"}},\"benFlowID\":3107378,\"beneficiaryID\":502262062935,\"sessionID\":3,\"parkingPlaceID\":33,\"vanID\":295,\"serviceID\":9,\"createdBy\":\"Mokrong\",\"tcRequest\":null,\"beneficiaryRegID\":10468523,\"providerServiceMapID\":1717}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://uatamrit.piramalswasthya.org/hwc-api/ANC/save/nurseData",
+					"protocol": "https",
+					"host": [
+						"uatamrit",
+						"piramalswasthya",
+						"org"
+					],
+					"path": [
+						"hwc-api",
+						"ANC",
+						"save",
+						"nurseData"
+					]
+				},
+				"description": "Generated from cURL: curl 'https://uatamrit.piramalswasthya.org/hwc-api/ANC/save/nurseData' \\\r\n  -H 'accept: application/json, text/plain, */*' \\\r\n  -H 'accept-language: en-US,en;q=0.9' \\\r\n  -H 'authorization: da144d25aff62a946caf65faad4b743f9d01cc0ca87ab594a166035e14911f22' \\\r\n  -H 'content-type: application/json' \\\r\n  -b 'Jwttoken=eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJtb2tyb25nIiwidXNlcklkIjoiMTk1MSIsInRva2VuX3R5cGUiOiJhY2Nlc3MiLCJqdGkiOiJhNmVhN2JhNC00ODBjLTRhOGUtYjYzNC04YzcxODY0MDE3ZGQiLCJpYXQiOjE3NjgyMzY2NDMsImV4cCI6MTc2ODI2NTQ0M30.o4Tsk5-ytthD6CqTrjyJFAvRjjhZm0msaGs7mu2zr_yFo6jpk2slOoPkgEq5_a-shD0XX4IwdLUtOvO1usR3sA' \\\r\n  -H 'origin: https://uatamrit.piramalswasthya.org' \\\r\n  -H 'priority: u=1, i' \\\r\n  -H 'referer: https://uatamrit.piramalswasthya.org/aam/' \\\r\n  -H 'sec-ch-ua: \"Google Chrome\";v=\"143\", \"Chromium\";v=\"143\", \"Not A(Brand\";v=\"24\"' \\\r\n  -H 'sec-ch-ua-mobile: ?0' \\\r\n  -H 'sec-ch-ua-platform: \"Windows\"' \\\r\n  -H 'sec-fetch-dest: empty' \\\r\n  -H 'sec-fetch-mode: cors' \\\r\n  -H 'sec-fetch-site: same-origin' \\\r\n  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36' \\\r\n  --data-raw '{\"visitDetails\":{\"visitDetails\":{\"beneficiaryRegID\":10468523,\"providerServiceMapID\":1717,\"visitNo\":null,\"visitReason\":\"New Chief Complaint\",\"subVisitCategory\":null,\"visitCategory\":\"ANC\",\"pregnancyStatus\":\"Yes\",\"followUpForFpMethod\":null,\"otherFollowUpForFpMethod\":null,\"sideEffects\":null,\"otherSideEffects\":null,\"IdrsOrCbac\":\"CBAC\",\"rCHID\":null,\"healthFacilityType\":null,\"healthFacilityLocation\":null,\"reportFilePath\":null,\"createdBy\":\"Mokrong\",\"vanID\":295,\"parkingPlaceID\":33,\"fileIDs\":null},\"chiefComplaints\":[{\"beneficiaryRegID\":10468523,\"benVisitID\":null,\"providerServiceMapID\":1717,\"conceptID\":\"161891005\",\"chiefComplaint\":\"Back Pain\",\"chiefComplaintID\":29,\"duration\":\"2\",\"unitOfDuration\":\"Days\",\"description\":null,\"createdBy\":\"Mokrong\",\"vanID\":295,\"parkingPlaceID\":33},{\"beneficiaryRegID\":10468523,\"benVisitID\":null,\"providerServiceMapID\":1717,\"conceptID\":null,\"chiefComplaint\":null,\"chiefComplaintID\":null,\"createdBy\":\"Mokrong\",\"vanID\":295,\"parkingPlaceID\":33}],\"adherence\":{\"beneficiaryRegID\":10468523,\"benVisitID\":null,\"providerServiceMapID\":1717,\"createdBy\":\"Mokrong\",\"toDrugs\":null,\"drugReason\":null,\"toReferral\":null,\"referralReason\":null,\"progress\":null,\"vanID\":295,\"parkingPlaceID\":33},\"cdss\":{\"presentChiefComplaintDb\":{\"presentChiefComplaint\":null,\"presentChiefComplaintID\":null,\"selectedDiagnosis\":null,\"selectedProvisionalDiagnosisID\":null,\"recommendedActionPc\":null,\"remarksPc\":null,\"presentChiefComplaintView\":null},\"diseaseSummaryDb\":{\"diseaseSummary\":null,\"diseasesummaryID\":null,\"recommendedAction\":null,\"remarks\":null,\"informationGiven\":null,\"diseaseSummaryView\":null},\"providerServiceMapID\":1717,\"vanID\":295,\"parkingPlaceID\":33,\"beneficiaryRegID\":10468523,\"benVisitID\":null,\"createdBy\":\"Mokrong\"},\"investigation\":{\"beneficiaryRegID\":10468523,\"benVisitID\":null,\"providerServiceMapID\":1717,\"createdBy\":\"Mokrong\",\"laboratoryList\":[{\"procedureID\":110,\"procedureName\":\"Hemoglobin\",\"procedureDesc\":\"Hemoglobin\",\"procedureType\":\"Laboratory\",\"gender\":\"unisex\",\"providerServiceMapID\":1717}],\"vanID\":295,\"parkingPlaceID\":33}},\"ancDetails\":{\"ancObstetricDetails\":{\"beneficiaryRegID\":10468523,\"benVisitID\":null,\"providerServiceMapID\":1717,\"createdBy\":\"Mokrong\",\"primiGravida\":false,\"lmpDate\":\"2025-10-06T00:00:00.000Z\",\"gestationalAgeOrPeriodofAmenorrhea_POA\":14,\"expDelDt\":\"2026-07-12T18:30:00.000Z\",\"duration\":3,\"trimesterNumber\":2,\"bloodGroup\":null,\"vanID\":295,\"parkingPlaceID\":33,\"gravida_G\":1,\"para\":null,\"abortions_A\":null,\"stillBirth\":null,\"livebirths_L\":null},\"ancImmunization\":{\"tT_1Status\":null,\"dateReceivedForTT_1\":null,\"facilityNameOfTT_1\":null,\"tT_2Status\":null,\"dateReceivedForTT_2\":null,\"facilityNameOfTT_2\":null,\"tT_3Status\":null,\"dateReceivedForTT_3\":null,\"facilityNameOfTT_3\":null,\"beneficiaryRegID\":10468523,\"benVisitID\":null,\"providerServiceMapID\":1717,\"createdBy\":\"Mokrong\",\"vanID\":295,\"parkingPlaceID\":33}},\"vitalDetails\":{\"beneficiaryRegID\":10468523,\"benVisitID\":null,\"providerServiceMapID\":1717,\"weight_Kg\":\"56\",\"height_cm\":\"156\",\"waistCircumference_cm\":null,\"hipCircumference_cm\":null,\"bMI\":23,\"waistHipRatio\":null,\"headCircumference_cm\":null,\"midUpperArmCircumference_MUAC_cm\":null,\"temperature\":\"98\",\"pulseRate\":null,\"sPO2\":null,\"systolicBP_1stReading\":\"120\",\"diastolicBP_1stReading\":\"80\",\"bloodGlucose_Fasting\":null,\"bloodGlucose_Random\":null,\"bloodGlucose_2hr_PP\":null,\"respiratoryRate\":null,\"rbsTestResult\":null,\"rbsTestRemarks\":null,\"rbsCheckBox\":true,\"hemoglobin\":null,\"createdBy\":\"Mokrong\",\"frequentCoughChecked\":null,\"sputumChecked\":null,\"coughAtNightChecked\":null,\"wheezingChecked\":null,\"painInChestChecked\":null,\"shortnessOfBreathChecked\":null,\"vanID\":295,\"parkingPlaceID\":33},\"historyDetails\":{\"pastHistory\":{\"vanID\":295,\"parkingPlaceID\":33,\"pastIllness\":[{\"illnessTypeID\":null,\"illnessType\":null,\"otherIllnessType\":null}],\"pastSurgery\":[{\"surgeryID\":null,\"surgeryType\":null,\"otherSurgeryType\":null}],\"beneficiaryRegID\":\"10468523\",\"benVisitID\":null,\"providerServiceMapID\":1717,\"createdBy\":\"Mokrong\"},\"comorbidConditions\":{\"vanID\":295,\"parkingPlaceID\":33,\"comorbidityConcurrentConditionsList\":[{\"comorbidConditions\":null,\"otherComorbidCondition\":null}],\"beneficiaryRegID\":\"10468523\",\"benVisitID\":null,\"providerServiceMapID\":1717,\"createdBy\":\"Mokrong\"},\"medicationHistory\":{\"vanID\":295,\"parkingPlaceID\":33,\"medicationHistoryList\":[{\"currentMedication\":null}],\"beneficiaryRegID\":\"10468523\",\"benVisitID\":null,\"providerServiceMapID\":1717,\"createdBy\":\"Mokrong\"},\"femaleObstetricHistory\":{\"totalNoOfPreg\":null,\"vanID\":295,\"parkingPlaceID\":33,\"complicationPregList\":[],\"beneficiaryRegID\":\"10468523\",\"benVisitID\":null,\"providerServiceMapID\":1717,\"createdBy\":\"Mokrong\",\"femaleObstetricHistoryList\":[]},\"menstrualHistory\":{\"menstrualCycleStatus\":\"Amenorrhea\",\"menstrualCycleStatusID\":\"1\",\"regularity\":null,\"cycleLength\":null,\"menstrualCyclelengthID\":null,\"menstrualFlowDurationID\":null,\"bloodFlowDuration\":null,\"menstrualProblemList\":null,\"lMPDate\":\"2025-10-06T00:00:00.000Z\",\"vanID\":295,\"parkingPlaceID\":33,\"beneficiaryRegID\":\"10468523\",\"benVisitID\":null,\"providerServiceMapID\":1717,\"createdBy\":\"Mokrong\"},\"familyHistory\":{\"familyDiseaseList\":[{\"diseaseTypeID\":null,\"diseaseType\":null,\"otherDiseaseType\":null,\"snomedCode\":null,\"snomedTerm\":null}],\"isGeneticDisorder\":null,\"geneticDisorder\":null,\"isConsanguineousMarrige\":null,\"vanID\":295,\"parkingPlaceID\":33,\"beneficiaryRegID\":\"10468523\",\"benVisitID\":null,\"providerServiceMapID\":1717,\"createdBy\":\"Mokrong\"},\"personalHistory\":{\"dietaryType\":null,\"physicalActivityType\":null,\"riskySexualPracticesStatus\":null,\"tobaccoUseStatus\":null,\"alcoholIntakeStatus\":null,\"allergyStatus\":null,\"vanID\":null,\"parkingPlaceID\":null,\"tobaccoList\":[{\"tobaccoUseTypeID\":null,\"tobaccoUseType\":null,\"otherTobaccoUseType\":null,\"numberperDay\":null,\"numberperWeek\":null}],\"alcoholList\":[{\"alcoholTypeID\":null,\"typeOfAlcohol\":null,\"otherAlcoholType\":null}],\"allergicList\":[{\"allergyType\":null,\"allergyName\":null,\"snomedCode\":null,\"otherAllergicReaction\":null,\"enableOtherAllergy\":false}],\"beneficiaryRegID\":\"10468523\",\"benVisitID\":null,\"providerServiceMapID\":1717,\"createdBy\":\"Mokrong\"}},\"examinationDetails\":{\"generalExamination\":{\"consciousness\":null,\"coherence\":null,\"cooperation\":null,\"comfortness\":null,\"builtAndAppearance\":null,\"gait\":null,\"dangerSigns\":null,\"typeOfDangerSigns\":null,\"pallor\":null,\"quickening\":null,\"foetalMovements\":null,\"jaundice\":null,\"cyanosis\":null,\"clubbing\":null,\"lymphadenopathy\":null,\"lymphnodesInvolved\":null,\"typeOfLymphadenopathy\":null,\"edema\":null,\"extentOfEdema\":null,\"edemaType\":null,\"vanID\":295,\"parkingPlaceID\":33,\"beneficiaryRegID\":10468523,\"benVisitID\":null,\"providerServiceMapID\":1717,\"createdBy\":\"Mokrong\"},\"headToToeExamination\":{\"headtoToeExam\":null,\"head\":null,\"eyes\":null,\"ears\":null,\"nose\":null,\"oralCavity\":null,\"throat\":null,\"breastAndNipples\":null,\"nipples\":null,\"trunk\":null,\"upperLimbs\":null,\"lowerLimbs\":null,\"skin\":null,\"hair\":null,\"nails\":null,\"vanID\":295,\"parkingPlaceID\":33,\"beneficiaryRegID\":10468523,\"benVisitID\":null,\"providerServiceMapID\":1717,\"createdBy\":\"Mokrong\"},\"cardioVascularExamination\":{\"jugularVenousPulse_JVP\":null,\"apexbeatLocation\":null,\"apexbeatType\":null,\"firstHeartSound_S1\":null,\"secondHeartSound_S2\":null,\"additionalHeartSounds\":null,\"murmurs\":null,\"pericardialRub\":null,\"vanID\":295,\"parkingPlaceID\":33,\"beneficiaryRegID\":10468523,\"benVisitID\":null,\"providerServiceMapID\":1717,\"createdBy\":\"Mokrong\"},\"respiratorySystemExamination\":{\"trachea\":null,\"inspection\":null,\"signsOfRespiratoryDistress\":null,\"palpation\":null,\"auscultation_Stridor\":null,\"auscultation_BreathSounds\":null,\"auscultation_Crepitations\":null,\"auscultation_Wheezing\":null,\"auscultation_PleuralRub\":null,\"auscultation_ConductedSounds\":null,\"percussion\":null,\"vanID\":295,\"parkingPlaceID\":33,\"beneficiaryRegID\":10468523,\"benVisitID\":null,\"providerServiceMapID\":1717,\"createdBy\":\"Mokrong\"},\"centralNervousSystemExamination\":{\"handedness\":null,\"cranialNervesExamination\":null,\"motorSystem\":null,\"sensorySystem\":null,\"autonomicSystem\":null,\"cerebellarSigns\":null,\"signsOfMeningealIrritation\":null,\"skull\":null,\"vanID\":295,\"parkingPlaceID\":33,\"beneficiaryRegID\":10468523,\"benVisitID\":null,\"providerServiceMapID\":1717,\"createdBy\":\"Mokrong\"},\"musculoskeletalSystemExamination\":{\"joint_TypeOfJoint\":null,\"joint_Laterality\":null,\"joint_Abnormality\":null,\"upperLimb_Laterality\":null,\"upperLimb_Abnormality\":null,\"lowerLimb_Laterality\":null,\"lowerLimb_Abnormality\":null,\"chestWall\":null,\"spine\":null,\"vanID\":295,\"parkingPlaceID\":33,\"beneficiaryRegID\":10468523,\"benVisitID\":null,\"providerServiceMapID\":1717,\"createdBy\":\"Mokrong\"},\"genitoUrinarySystemExamination\":{\"renalAngle\":null,\"suprapubicRegion\":null,\"externalGenitalia\":null,\"vanID\":295,\"parkingPlaceID\":33,\"beneficiaryRegID\":10468523,\"benVisitID\":null,\"providerServiceMapID\":1717,\"createdBy\":\"Mokrong\"},\"obstetricExamination\":{\"fundalHeight\":\"12th Week\",\"fHAndPOA_Status\":\"FH=POA\",\"fHAndPOA_Interpretation\":\"Corresponding\",\"fetalMovements\":\"Present\",\"fetalHeartSounds\":\"Audible\",\"fetalHeartRate_BeatsPerMinute\":null,\"fetalPositionOrLie\":\"Longitudinal\",\"fetalPresentation\":null,\"abdominalScars\":null,\"sfh\":null,\"malPresentation\":\"true\",\"lowLyingPlacenta\":\"true\",\"vertebralDeformity\":\"true\",\"isHRP\":true,\"reasonsForHRP\":[\"Low Lying Placenta\",\"Mal Presentation\",\"Vertebral Deformity\"],\"vanID\":295,\"parkingPlaceID\":33,\"beneficiaryRegID\":10468523,\"benVisitID\":null,\"providerServiceMapID\":1717,\"createdBy\":\"Mokrong\"}},\"benFlowID\":3107378,\"beneficiaryID\":502262062935,\"sessionID\":3,\"parkingPlaceID\":33,\"vanID\":295,\"serviceID\":9,\"createdBy\":\"Mokrong\",\"tcRequest\":null,\"beneficiaryRegID\":10468523,\"providerServiceMapID\":1717}'"
+			},
+			"response": []
+		},
+		{
+			"name": "ANCsaveDoctorData",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "accept-language",
+						"value": "en-US,en;q=0.9"
+					},
+					{
+						"key": "authorization",
+						"value": "da144d25aff62a946caf65faad4b743f9d01cc0ca87ab594a166035e14911f22"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json"
+					},
+					{
+						"key": "origin",
+						"value": "https://uatamrit.piramalswasthya.org"
+					},
+					{
+						"key": "priority",
+						"value": "u=1, i"
+					},
+					{
+						"key": "referer",
+						"value": "https://uatamrit.piramalswasthya.org/aam/"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Google Chrome\";v=\"143\", \"Chromium\";v=\"143\", \"Not A(Brand\";v=\"24\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Windows\""
+					},
+					{
+						"key": "sec-fetch-dest",
+						"value": "empty"
+					},
+					{
+						"key": "sec-fetch-mode",
+						"value": "cors"
+					},
+					{
+						"key": "sec-fetch-site",
+						"value": "same-origin"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "Cookie",
+						"value": "Jwttoken=eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJtb2tyb25nIiwidXNlcklkIjoiMTk1MSIsInRva2VuX3R5cGUiOiJhY2Nlc3MiLCJqdGkiOiJhNmVhN2JhNC00ODBjLTRhOGUtYjYzNC04YzcxODY0MDE3ZGQiLCJpYXQiOjE3NjgyMzY2NDMsImV4cCI6MTc2ODI2NTQ0M30.o4Tsk5-ytthD6CqTrjyJFAvRjjhZm0msaGs7mu2zr_yFo6jpk2slOoPkgEq5_a-shD0XX4IwdLUtOvO1usR3sA"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"findings\":{\"beneficiaryRegID\":10468523,\"benVisitID\":2702038,\"providerServiceMapID\":1717,\"otherSymptoms\":null,\"significantFindings\":null,\"isForHistory\":null,\"complaints\":[],\"createdBy\":\"Mokrong\",\"vanID\":295,\"parkingPlaceID\":33,\"clinicalObservationsList\":[],\"significantFindingsList\":[{\"conceptID\":null,\"term\":null,\"significantFindingsProvided\":null}],\"visitCode\":30029502702038,\"isSpecialist\":false},\"diagnosis\":{\"gravida_G\":1,\"duration\":\"3\",\"highRiskStatus\":null,\"highRiskCondition\":null,\"complicationOfCurrentPregnancyList\":[],\"otherCurrPregComplication\":null,\"prescriptionID\":null,\"vanID\":295,\"parkingPlaceID\":33,\"beneficiaryRegID\":10468523,\"benVisitID\":2702038,\"visitCode\":30029502702038,\"providerServiceMapID\":1717,\"createdBy\":\"Mokrong\",\"isSpecialist\":false},\"investigation\":{\"externalInvestigations\":\"\",\"vanID\":295,\"parkingPlaceID\":33,\"beneficiaryRegID\":10468523,\"benVisitID\":2702038,\"visitCode\":30029502702038,\"providerServiceMapID\":1717,\"createdBy\":\"Mokrong\",\"isSpecialist\":false,\"laboratoryList\":[]},\"prescription\":[{\"id\":null,\"drugID\":1233,\"drugName\":\"Folic acid\",\"drugStrength\":\"5mg\",\"formName\":\"Tablet\",\"formID\":1,\"dose\":\"One & Half Tab\",\"qtyPrescribed\":null,\"frequency\":\"Once Daily(OD)\",\"duration\":2,\"route\":\"Oral\",\"durationView\":\"2 Day(s)\",\"unit\":\"Day(s)\",\"instructions\":null,\"sctCode\":null,\"sctTerm\":null,\"createdBy\":\"Mokrong\",\"vanID\":295,\"parkingPlaceID\":33,\"isEDL\":true}],\"counsellingProvidedList\":null,\"refer\":{\"referredToInstituteID\":null,\"refrredToAdditionalServiceList\":null,\"referredToInstituteName\":null,\"otherReferredToInstituteName\":null,\"referralReason\":null,\"referralReasonList\":null,\"otherReferralReason\":null,\"revisitDate\":null,\"vanID\":295,\"parkingPlaceID\":33,\"beneficiaryRegID\":10468523,\"benVisitID\":2702038,\"visitCode\":30029502702038,\"providerServiceMapID\":1717,\"createdBy\":\"Mokrong\",\"isSpecialist\":false},\"benFlowID\":3107378,\"beneficiaryID\":502262062935,\"doctorFlag\":1,\"nurseFlag\":3,\"pharmacist_flag\":0,\"sessionID\":3,\"parkingPlaceID\":33,\"vanID\":295,\"beneficiaryRegID\":\"10468523\",\"providerServiceMapID\":1717,\"visitCode\":30029502702038,\"benVisitID\":2702038,\"serviceID\":9,\"createdBy\":\"Mokrong\",\"isSpecialist\":false,\"doctorSignatureFlag\":\"false\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://uatamrit.piramalswasthya.org/hwc-api/ANC/save/doctorData",
+					"protocol": "https",
+					"host": [
+						"uatamrit",
+						"piramalswasthya",
+						"org"
+					],
+					"path": [
+						"hwc-api",
+						"ANC",
+						"save",
+						"doctorData"
+					]
+				},
+				"description": "Generated from cURL: curl 'https://uatamrit.piramalswasthya.org/hwc-api/ANC/save/doctorData' \\\r\n  -H 'accept: application/json, text/plain, */*' \\\r\n  -H 'accept-language: en-US,en;q=0.9' \\\r\n  -H 'authorization: da144d25aff62a946caf65faad4b743f9d01cc0ca87ab594a166035e14911f22' \\\r\n  -H 'content-type: application/json' \\\r\n  -b 'Jwttoken=eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJtb2tyb25nIiwidXNlcklkIjoiMTk1MSIsInRva2VuX3R5cGUiOiJhY2Nlc3MiLCJqdGkiOiJhNmVhN2JhNC00ODBjLTRhOGUtYjYzNC04YzcxODY0MDE3ZGQiLCJpYXQiOjE3NjgyMzY2NDMsImV4cCI6MTc2ODI2NTQ0M30.o4Tsk5-ytthD6CqTrjyJFAvRjjhZm0msaGs7mu2zr_yFo6jpk2slOoPkgEq5_a-shD0XX4IwdLUtOvO1usR3sA' \\\r\n  -H 'origin: https://uatamrit.piramalswasthya.org' \\\r\n  -H 'priority: u=1, i' \\\r\n  -H 'referer: https://uatamrit.piramalswasthya.org/aam/' \\\r\n  -H 'sec-ch-ua: \"Google Chrome\";v=\"143\", \"Chromium\";v=\"143\", \"Not A(Brand\";v=\"24\"' \\\r\n  -H 'sec-ch-ua-mobile: ?0' \\\r\n  -H 'sec-ch-ua-platform: \"Windows\"' \\\r\n  -H 'sec-fetch-dest: empty' \\\r\n  -H 'sec-fetch-mode: cors' \\\r\n  -H 'sec-fetch-site: same-origin' \\\r\n  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36' \\\r\n  --data-raw '{\"findings\":{\"beneficiaryRegID\":10468523,\"benVisitID\":2702038,\"providerServiceMapID\":1717,\"otherSymptoms\":null,\"significantFindings\":null,\"isForHistory\":null,\"complaints\":[],\"createdBy\":\"Mokrong\",\"vanID\":295,\"parkingPlaceID\":33,\"clinicalObservationsList\":[],\"significantFindingsList\":[{\"conceptID\":null,\"term\":null,\"significantFindingsProvided\":null}],\"visitCode\":30029502702038,\"isSpecialist\":false},\"diagnosis\":{\"gravida_G\":1,\"duration\":\"3\",\"highRiskStatus\":null,\"highRiskCondition\":null,\"complicationOfCurrentPregnancyList\":[],\"otherCurrPregComplication\":null,\"prescriptionID\":null,\"vanID\":295,\"parkingPlaceID\":33,\"beneficiaryRegID\":10468523,\"benVisitID\":2702038,\"visitCode\":30029502702038,\"providerServiceMapID\":1717,\"createdBy\":\"Mokrong\",\"isSpecialist\":false},\"investigation\":{\"externalInvestigations\":\"\",\"vanID\":295,\"parkingPlaceID\":33,\"beneficiaryRegID\":10468523,\"benVisitID\":2702038,\"visitCode\":30029502702038,\"providerServiceMapID\":1717,\"createdBy\":\"Mokrong\",\"isSpecialist\":false,\"laboratoryList\":[]},\"prescription\":[{\"id\":null,\"drugID\":1233,\"drugName\":\"Folic acid\",\"drugStrength\":\"5mg\",\"formName\":\"Tablet\",\"formID\":1,\"dose\":\"One & Half Tab\",\"qtyPrescribed\":null,\"frequency\":\"Once Daily(OD)\",\"duration\":2,\"route\":\"Oral\",\"durationView\":\"2 Day(s)\",\"unit\":\"Day(s)\",\"instructions\":null,\"sctCode\":null,\"sctTerm\":null,\"createdBy\":\"Mokrong\",\"vanID\":295,\"parkingPlaceID\":33,\"isEDL\":true}],\"counsellingProvidedList\":null,\"refer\":{\"referredToInstituteID\":null,\"refrredToAdditionalServiceList\":null,\"referredToInstituteName\":null,\"otherReferredToInstituteName\":null,\"referralReason\":null,\"referralReasonList\":null,\"otherReferralReason\":null,\"revisitDate\":null,\"vanID\":295,\"parkingPlaceID\":33,\"beneficiaryRegID\":10468523,\"benVisitID\":2702038,\"visitCode\":30029502702038,\"providerServiceMapID\":1717,\"createdBy\":\"Mokrong\",\"isSpecialist\":false},\"benFlowID\":3107378,\"beneficiaryID\":502262062935,\"doctorFlag\":1,\"nurseFlag\":3,\"pharmacist_flag\":0,\"sessionID\":3,\"parkingPlaceID\":33,\"vanID\":295,\"beneficiaryRegID\":\"10468523\",\"providerServiceMapID\":1717,\"visitCode\":30029502702038,\"benVisitID\":2702038,\"serviceID\":9,\"createdBy\":\"Mokrong\",\"isSpecialist\":false,\"doctorSignatureFlag\":\"false\"}'"
+			},
+			"response": []
+		},
+		{
+			"name": "getPrescribedMedicines",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "accept-language",
+						"value": "en-US,en;q=0.9"
+					},
+					{
+						"key": "authorization",
+						"value": "da144d25aff62a946caf65faad4b743f9d01cc0ca87ab594a166035e14911f22"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json"
+					},
+					{
+						"key": "origin",
+						"value": "https://uatamrit.piramalswasthya.org"
+					},
+					{
+						"key": "priority",
+						"value": "u=1, i"
+					},
+					{
+						"key": "referer",
+						"value": "https://uatamrit.piramalswasthya.org/aam-inventory/"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Google Chrome\";v=\"143\", \"Chromium\";v=\"143\", \"Not A(Brand\";v=\"24\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Windows\""
+					},
+					{
+						"key": "sec-fetch-dest",
+						"value": "empty"
+					},
+					{
+						"key": "sec-fetch-mode",
+						"value": "cors"
+					},
+					{
+						"key": "sec-fetch-site",
+						"value": "same-origin"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "Cookie",
+						"value": "Jwttoken=eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJtb2tyb25nIiwidXNlcklkIjoiMTk1MSIsInRva2VuX3R5cGUiOiJhY2Nlc3MiLCJqdGkiOiJhNmVhN2JhNC00ODBjLTRhOGUtYjYzNC04YzcxODY0MDE3ZGQiLCJpYXQiOjE3NjgyMzY2NDMsImV4cCI6MTc2ODI2NTQ0M30.o4Tsk5-ytthD6CqTrjyJFAvRjjhZm0msaGs7mu2zr_yFo6jpk2slOoPkgEq5_a-shD0XX4IwdLUtOvO1usR3sA"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"visitCode\":\"30029502702038\",\"facilityID\":\"278\",\"beneficiaryRegID\":\"10468523\",\"vanID\":\"295\",\"parkingPlaceID\":\"33\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://uatamrit.piramalswasthya.org/inventory-api/RX/getPrescribedMedicines",
+					"protocol": "https",
+					"host": [
+						"uatamrit",
+						"piramalswasthya",
+						"org"
+					],
+					"path": [
+						"inventory-api",
+						"RX",
+						"getPrescribedMedicines"
+					]
+				},
+				"description": "Generated from cURL: curl 'https://uatamrit.piramalswasthya.org/inventory-api/RX/getPrescribedMedicines' \\\r\n  -H 'accept: application/json, text/plain, */*' \\\r\n  -H 'accept-language: en-US,en;q=0.9' \\\r\n  -H 'authorization: da144d25aff62a946caf65faad4b743f9d01cc0ca87ab594a166035e14911f22' \\\r\n  -H 'content-type: application/json' \\\r\n  -b 'Jwttoken=eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJtb2tyb25nIiwidXNlcklkIjoiMTk1MSIsInRva2VuX3R5cGUiOiJhY2Nlc3MiLCJqdGkiOiJhNmVhN2JhNC00ODBjLTRhOGUtYjYzNC04YzcxODY0MDE3ZGQiLCJpYXQiOjE3NjgyMzY2NDMsImV4cCI6MTc2ODI2NTQ0M30.o4Tsk5-ytthD6CqTrjyJFAvRjjhZm0msaGs7mu2zr_yFo6jpk2slOoPkgEq5_a-shD0XX4IwdLUtOvO1usR3sA' \\\r\n  -H 'origin: https://uatamrit.piramalswasthya.org' \\\r\n  -H 'priority: u=1, i' \\\r\n  -H 'referer: https://uatamrit.piramalswasthya.org/aam-inventory/' \\\r\n  -H 'sec-ch-ua: \"Google Chrome\";v=\"143\", \"Chromium\";v=\"143\", \"Not A(Brand\";v=\"24\"' \\\r\n  -H 'sec-ch-ua-mobile: ?0' \\\r\n  -H 'sec-ch-ua-platform: \"Windows\"' \\\r\n  -H 'sec-fetch-dest: empty' \\\r\n  -H 'sec-fetch-mode: cors' \\\r\n  -H 'sec-fetch-site: same-origin' \\\r\n  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36' \\\r\n  --data-raw '{\"visitCode\":\"30029502702038\",\"facilityID\":\"278\",\"beneficiaryRegID\":\"10468523\",\"vanID\":\"295\",\"parkingPlaceID\":\"33\"}'"
+			},
+			"response": []
+		},
+		{
+			"name": "getCase-sheetPrintData",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "accept-language",
+						"value": "en-US,en;q=0.9"
+					},
+					{
+						"key": "authorization",
+						"value": "b9b9524747135a1e5276d85d667ae9f338e37d437d0cc4dee6e252592de4db46"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json"
+					},
+					{
+						"key": "origin",
+						"value": "https://uatamrit.piramalswasthya.org"
+					},
+					{
+						"key": "priority",
+						"value": "u=1, i"
+					},
+					{
+						"key": "referer",
+						"value": "https://uatamrit.piramalswasthya.org/aam/"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Google Chrome\";v=\"143\", \"Chromium\";v=\"143\", \"Not A(Brand\";v=\"24\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Windows\""
+					},
+					{
+						"key": "sec-fetch-dest",
+						"value": "empty"
+					},
+					{
+						"key": "sec-fetch-mode",
+						"value": "cors"
+					},
+					{
+						"key": "sec-fetch-site",
+						"value": "same-origin"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "Cookie",
+						"value": "Jwttoken=eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJtb2tyb25nIiwidXNlcklkIjoiMTk1MSIsInRva2VuX3R5cGUiOiJhY2Nlc3MiLCJqdGkiOiJhNmVhN2JhNC00ODBjLTRhOGUtYjYzNC04YzcxODY0MDE3ZGQiLCJpYXQiOjE3NjgyMzY2NDMsImV4cCI6MTc2ODI2NTQ0M30.o4Tsk5-ytthD6CqTrjyJFAvRjjhZm0msaGs7mu2zr_yFo6jpk2slOoPkgEq5_a-shD0XX4IwdLUtOvO1usR3sA"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"VisitCategory\":\"ANC\",\"benFlowID\":3107378,\"benVisitID\":2702038,\"beneficiaryRegID\":10468523,\"visitCode\":30029502702038}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://uatamrit.piramalswasthya.org/hwc-api/common/get/Case-sheet/printData",
+					"protocol": "https",
+					"host": [
+						"uatamrit",
+						"piramalswasthya",
+						"org"
+					],
+					"path": [
+						"hwc-api",
+						"common",
+						"get",
+						"Case-sheet",
+						"printData"
+					]
+				},
+				"description": "Generated from cURL: curl 'https://uatamrit.piramalswasthya.org/hwc-api/common/get/Case-sheet/printData' \\\r\n  -H 'accept: application/json, text/plain, */*' \\\r\n  -H 'accept-language: en-US,en;q=0.9' \\\r\n  -H 'authorization: b9b9524747135a1e5276d85d667ae9f338e37d437d0cc4dee6e252592de4db46' \\\r\n  -H 'content-type: application/json' \\\r\n  -b 'Jwttoken=eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJtb2tyb25nIiwidXNlcklkIjoiMTk1MSIsInRva2VuX3R5cGUiOiJhY2Nlc3MiLCJqdGkiOiJhNmVhN2JhNC00ODBjLTRhOGUtYjYzNC04YzcxODY0MDE3ZGQiLCJpYXQiOjE3NjgyMzY2NDMsImV4cCI6MTc2ODI2NTQ0M30.o4Tsk5-ytthD6CqTrjyJFAvRjjhZm0msaGs7mu2zr_yFo6jpk2slOoPkgEq5_a-shD0XX4IwdLUtOvO1usR3sA' \\\r\n  -H 'origin: https://uatamrit.piramalswasthya.org' \\\r\n  -H 'priority: u=1, i' \\\r\n  -H 'referer: https://uatamrit.piramalswasthya.org/aam/' \\\r\n  -H 'sec-ch-ua: \"Google Chrome\";v=\"143\", \"Chromium\";v=\"143\", \"Not A(Brand\";v=\"24\"' \\\r\n  -H 'sec-ch-ua-mobile: ?0' \\\r\n  -H 'sec-ch-ua-platform: \"Windows\"' \\\r\n  -H 'sec-fetch-dest: empty' \\\r\n  -H 'sec-fetch-mode: cors' \\\r\n  -H 'sec-fetch-site: same-origin' \\\r\n  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36' \\\r\n  --data-raw '{\"VisitCategory\":\"ANC\",\"benFlowID\":3107378,\"benVisitID\":2702038,\"beneficiaryRegID\":10468523,\"visitCode\":30029502702038}'"
+			},
+			"response": []
+		},
+		{
+			"name": "InvalidLoginCred",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code should be 401\", function () {\r",
+							"    pm.response.to.have.status(401);\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {},
+						"requests": {}
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "accept-language",
+						"value": "en-US,en;q=0.9"
+					},
+					{
+						"key": "authorization",
+						"value": ""
+					},
+					{
+						"key": "content-type",
+						"value": "application/json"
+					},
+					{
+						"key": "origin",
+						"value": "https://uatamrit.piramalswasthya.org"
+					},
+					{
+						"key": "priority",
+						"value": "u=1, i"
+					},
+					{
+						"key": "referer",
+						"value": "https://uatamrit.piramalswasthya.org/aam/"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Google Chrome\";v=\"143\", \"Chromium\";v=\"143\", \"Not A(Brand\";v=\"24\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Windows\""
+					},
+					{
+						"key": "sec-fetch-dest",
+						"value": "empty"
+					},
+					{
+						"key": "sec-fetch-mode",
+						"value": "cors"
+					},
+					{
+						"key": "sec-fetch-site",
+						"value": "same-origin"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "Cookie",
+						"value": "Jwttoken=eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJtb2tyb25nIiwidXNlcklkIjoiMTk1MSIsInRva2VuX3R5cGUiOiJhY2Nlc3MiLCJqdGkiOiJhNmVhN2JhNC00ODBjLTRhOGUtYjYzNC04YzcxODY0MDE3ZGQiLCJpYXQiOjE3NjgyMzY2NDMsImV4cCI6MTc2ODI2NTQ0M30.o4Tsk5-ytthD6CqTrjyJFAvRjjhZm0msaGs7mu2zr_yFo6jpk2slOoPkgEq5_a-shD0XX4IwdLUtOvO1usR3sA"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"userName\":\"mokron\",\"password\":\"1d492cbb77e54bda60b66889e8efbdb193cdb38f1e50d4fd66b54869ddb7770b7125535b8bc8b90910c91ae342e067d2RGt/PUqD0fVbxEVjJ3GOOA==\",\"doLogout\":false,\"withCredentials\":true,\"captchaToken\":\"0.nsJrLLaf5Ozj_CZDDPPPiLc4hasOCdoOHpe5ewjUO3vzZEd5vEpEin1hnuNveG0-wQarE2i9U6FsmpEVqKMiSosLr1MsVRvhe7LUty53SfQyyUd3Q9OkRXO3LHI9m_xP4UBZedaT6TzvqIz879_UMR83l-b1s7wDVdXx2f-IwMbM_iTzhwqoP8zP4mR4iWREnLPfFwubF0IzJR9MVJEUxlenza160fO5KuNKD5T-_KHw_PLMbXUzygnv8e6R5RRvxgyLfVgG40OQAAxTC9zpa2WgoSGJhNLZtzuZt52qfT36x4sMIaLjNvORmQa9HhLCdJEXviSIrpdBljcyepEkCqGZkw5h8bSOt3nV9cfKXGMYvipn1Zcc-w7M8Np06MnqbdHp7NWVoa0bRPvo_mjXZv3OH2lrnBrTT3lqwDYzVafwXk8D6JHGdz7dqSxqz4IqYq96w7N00dWO1RuAy1m5fNpSbZcq5flldQbpllrwU_EIL970xXZ13ElafKqbDZluWEVdJOaUPqhhMgJRYiWhgu9KkC06tJw6DVedzV_XOJCsWHqYRe-lQWKgTvP0_rnWQepnZLTNA8jP5d_gmPNjW_HaBA8fqn1lEisGzcsPqLlZrLYctmYPpEaA8IJ1q4UHLctdHPsqzOzNgwhepCLLN44raQwxfRBn-1eI6mSOdn5sInnSWzeQVZcd9cRPyS_3QHFW2F16GH1GEX6Kstw7BM6awkOlT6PQYJ9QBvrSK868A93xPahGDT0JC5Y9zxbm4OoAcl7VLBS0K3AdzTZk8iqEsDR0JM1IZ21W64de7BXYF51TuwNmcNqMqz4MeCceHugf_-bGPmPXZ6yvEjmF5uSUtxiV_Rq4rNSS776RBhAgBGTskaGxnBD6X9xQe82UqW9uowVYC4EnWo-fw1AvHyHc6sEgJVl2MNie9QH7wQ88ZAFzvFs18OFuZseR5JfBl5doDEzc97aw7DGGQoJ0hUFtVliyoPHMUmz3RHkXJ8o.kJ9Rl0srBNMPkd7wFUJYhA.12daaa730179e66a1f58216d7f3471e4456e6be1389050c9efcc3ac02b8812ba\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://uatamrit.piramalswasthya.org/common-api/user/userAuthenticate",
+					"protocol": "https",
+					"host": [
+						"uatamrit",
+						"piramalswasthya",
+						"org"
+					],
+					"path": [
+						"common-api",
+						"user",
+						"userAuthenticate"
+					]
+				},
+				"description": "Generated from cURL: curl 'https://uatamrit.piramalswasthya.org/common-api/user/userAuthenticate' \\\r\n  -H 'accept: application/json, text/plain, */*' \\\r\n  -H 'accept-language: en-US,en;q=0.9' \\\r\n  -H 'authorization;' \\\r\n  -H 'content-type: application/json' \\\r\n  -b 'Jwttoken=eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJtb2tyb25nIiwidXNlcklkIjoiMTk1MSIsInRva2VuX3R5cGUiOiJhY2Nlc3MiLCJqdGkiOiJhNmVhN2JhNC00ODBjLTRhOGUtYjYzNC04YzcxODY0MDE3ZGQiLCJpYXQiOjE3NjgyMzY2NDMsImV4cCI6MTc2ODI2NTQ0M30.o4Tsk5-ytthD6CqTrjyJFAvRjjhZm0msaGs7mu2zr_yFo6jpk2slOoPkgEq5_a-shD0XX4IwdLUtOvO1usR3sA' \\\r\n  -H 'origin: https://uatamrit.piramalswasthya.org' \\\r\n  -H 'priority: u=1, i' \\\r\n  -H 'referer: https://uatamrit.piramalswasthya.org/aam/' \\\r\n  -H 'sec-ch-ua: \"Google Chrome\";v=\"143\", \"Chromium\";v=\"143\", \"Not A(Brand\";v=\"24\"' \\\r\n  -H 'sec-ch-ua-mobile: ?0' \\\r\n  -H 'sec-ch-ua-platform: \"Windows\"' \\\r\n  -H 'sec-fetch-dest: empty' \\\r\n  -H 'sec-fetch-mode: cors' \\\r\n  -H 'sec-fetch-site: same-origin' \\\r\n  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36' \\\r\n  --data-raw '{\"userName\":\"mokron\",\"password\":\"1d492cbb77e54bda60b66889e8efbdb193cdb38f1e50d4fd66b54869ddb7770b7125535b8bc8b90910c91ae342e067d2RGt/PUqD0fVbxEVjJ3GOOA==\",\"doLogout\":false,\"withCredentials\":true,\"captchaToken\":\"0.nsJrLLaf5Ozj_CZDDPPPiLc4hasOCdoOHpe5ewjUO3vzZEd5vEpEin1hnuNveG0-wQarE2i9U6FsmpEVqKMiSosLr1MsVRvhe7LUty53SfQyyUd3Q9OkRXO3LHI9m_xP4UBZedaT6TzvqIz879_UMR83l-b1s7wDVdXx2f-IwMbM_iTzhwqoP8zP4mR4iWREnLPfFwubF0IzJR9MVJEUxlenza160fO5KuNKD5T-_KHw_PLMbXUzygnv8e6R5RRvxgyLfVgG40OQAAxTC9zpa2WgoSGJhNLZtzuZt52qfT36x4sMIaLjNvORmQa9HhLCdJEXviSIrpdBljcyepEkCqGZkw5h8bSOt3nV9cfKXGMYvipn1Zcc-w7M8Np06MnqbdHp7NWVoa0bRPvo_mjXZv3OH2lrnBrTT3lqwDYzVafwXk8D6JHGdz7dqSxqz4IqYq96w7N00dWO1RuAy1m5fNpSbZcq5flldQbpllrwU_EIL970xXZ13ElafKqbDZluWEVdJOaUPqhhMgJRYiWhgu9KkC06tJw6DVedzV_XOJCsWHqYRe-lQWKgTvP0_rnWQepnZLTNA8jP5d_gmPNjW_HaBA8fqn1lEisGzcsPqLlZrLYctmYPpEaA8IJ1q4UHLctdHPsqzOzNgwhepCLLN44raQwxfRBn-1eI6mSOdn5sInnSWzeQVZcd9cRPyS_3QHFW2F16GH1GEX6Kstw7BM6awkOlT6PQYJ9QBvrSK868A93xPahGDT0JC5Y9zxbm4OoAcl7VLBS0K3AdzTZk8iqEsDR0JM1IZ21W64de7BXYF51TuwNmcNqMqz4MeCceHugf_-bGPmPXZ6yvEjmF5uSUtxiV_Rq4rNSS776RBhAgBGTskaGxnBD6X9xQe82UqW9uowVYC4EnWo-fw1AvHyHc6sEgJVl2MNie9QH7wQ88ZAFzvFs18OFuZseR5JfBl5doDEzc97aw7DGGQoJ0hUFtVliyoPHMUmz3RHkXJ8o.kJ9Rl0srBNMPkd7wFUJYhA.12daaa730179e66a1f58216d7f3471e4456e6be1389050c9efcc3ac02b8812ba\"}'"
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"requests": {},
+				"exec": [
+					"// Reset counters only once per collection run\r",
+					"if (!pm.environment.get(\"RUN_STARTED\")) {\r",
+					"    pm.environment.set(\"TOTAL_PASSED\", 0);\r",
+					"    pm.environment.set(\"TOTAL_FAILED\", 0);\r",
+					"    pm.environment.set(\"RUN_STARTED\", true);\r",
+					"}\r",
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"requests": {},
+				"exec": [
+					"pm.test(\"Status code is 200\", function () {\r",
+					"    try {\r",
+					"        pm.response.to.have.status(200);\r",
+					"        let pass = parseInt(pm.environment.get(\"TOTAL_PASSED\") || 0);\r",
+					"        pm.environment.set(\"TOTAL_PASSED\", pass + 1);\r",
+					"    } catch (e) {\r",
+					"        let fail = parseInt(pm.environment.get(\"TOTAL_FAILED\") || 0);\r",
+					"        pm.environment.set(\"TOTAL_FAILED\", fail + 1);\r",
+					"        throw e;\r",
+					"    }\r",
+					"});\r",
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "baseUrl",
+			"value": "https://uatamrit.piramalswasthya.org"
+		}
+	]
+}
