@@ -3,7 +3,7 @@ name: API Automation with Newman
 on:
   schedule:
     - cron: "0 */3 * * *"   # Every 3 hours
-  workflow_dispatch:       # Manual run option
+  workflow_dispatch:
 
 jobs:
   run-newman:
@@ -33,54 +33,42 @@ jobs:
           --reporter-htmlextra-export reports/newman-report.html \
           --reporter-htmlextra-showOnlyFails false \
           --reporter-htmlextra-logs true \
-          --reporter-htmlextra-export reports/newman-report.html || true
+          --reporter-htmlextra-title "API Automation HTML Report" || true
 
-      - name: Upload HTML Report
+      - name: Verify HTML report exists
+        run: |
+          echo "Checking reports directory..."
+          ls -l reports
+          test -f reports/newman-report.html
+
+      - name: Upload HTML Report to GitHub
         uses: actions/upload-artifact@v4
         with:
           name: newman-html-report
           path: reports/newman-report.html
 
-      # ----------------- MAIL ON FAILURE -----------------
-      - name: Send Email on Failure
-        if: failure()
+      - name: Send Email with HTML Report (PASS / FAIL)
         uses: dawidd6/action-send-mail@v3
         with:
           server_address: smtp.gmail.com
           server_port: 587
           username: ${{ secrets.MAIL_USERNAME }}
           password: ${{ secrets.MAIL_PASSWORD }}
-          subject: "❌ API Automation Failed – HTML Report Attached"
+          subject: "📊 API Automation Report - HTML Attached (Test Change)"
           body: |
             Hi Team,
 
-            API automation execution FAILED.
-            Please check the attached HTML report for detailed error logs.
+            The scheduled API automation run has been completed.
+
+            Please find the attached Newman HTML report.
+            It contains:
+            - Total test execution summary
+            - Passed / Failed test cases
+            - Error logs for failures
+            - Request and response details
 
             Thanks,
             Automation System
-          to: pratikshapiramal122@gmail.com
-          from: GitHub Actions
-          attachments: reports/newman-report.html
-
-      # ----------------- MAIL ON SUCCESS -----------------
-      - name: Send Email on Success
-        if: success()
-        uses: dawidd6/action-send-mail@v3
-        with:
-          server_address: smtp.gmail.com
-          server_port: 587
-          username: ${{ secrets.MAIL_USERNAME }}
-          password: ${{ secrets.MAIL_PASSWORD }}
-          subject: "✅ API Automation Passed – HTML Report Attached"
-          body: |
-            Hi Team,
-
-            API automation execution PASSED successfully.
-            Please find the attached HTML report.
-
-            Thanks,
-            Automation System
-          to: pratikshapiramal122@gmail.com
+          to: pratiksha.pandey@gmail.com
           from: GitHub Actions
           attachments: reports/newman-report.html
