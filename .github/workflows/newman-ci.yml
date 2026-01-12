@@ -1,0 +1,86 @@
+name: API Automation with Newman
+
+on:
+  schedule:
+    - cron: "0 */3 * * *"   # Every 3 hours
+  workflow_dispatch:       # Manual run option
+
+jobs:
+  run-newman:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Run API Tests with Newman
+        run: |
+          mkdir -p reports
+          npx newman run AAM.postman_collection.json \
+          -e HWC-uat.postman_environment.json \
+          --timeout-request 60000 \
+          --timeout-script 60000 \
+          --delay-request 2000 \
+          --reporters cli,htmlextra \
+          --reporter-htmlextra-export reports/newman-report.html \
+          --reporter-htmlextra-showOnlyFails false \
+          --reporter-htmlextra-logs true \
+          --reporter-htmlextra-title "API Automation Report"
+
+      - name: Upload HTML Report
+        uses: actions/upload-artifact@v4
+        with:
+          name: newman-html-report
+          path: reports/newman-report.html
+
+      # ----------------- MAIL ON FAILURE -----------------
+      - name: Send Email on Failure
+        if: failure()
+        uses: dawidd6/action-send-mail@v3
+        with:
+          server_address: smtp.gmail.com
+          server_port: 587
+          username: ${{ secrets.MAIL_USERNAME }}
+          password: ${{ secrets.MAIL_PASSWORD }}
+          subject: "❌ API Automation Failed – HTML Report Attached"
+          body: |
+            Hi Team,
+
+            API automation execution FAILED.
+            Please check the attached HTML report for detailed error logs.
+
+            Thanks,
+            Automation System
+          to: pratikshapiramal122@gmail.com
+          from: GitHub Actions
+          attachments: reports/newman-report.html
+
+      # ----------------- MAIL ON SUCCESS -----------------
+      - name: Send Email on Success
+        if: success()
+        uses: dawidd6/action-send-mail@v3
+        with:
+          server_address: smtp.gmail.com
+          server_port: 587
+          username: ${{ secrets.MAIL_USERNAME }}
+          password: ${{ secrets.MAIL_PASSWORD }}
+          subject: "✅ API Automation Passed – HTML Report Attached"
+          body: |
+            Hi Team,
+
+            API automation execution PASSED successfully.
+            Please find the attached HTML report.
+
+            Thanks,
+            Automation System
+          to: pratikshapiramal122@gmail.com
+          from: GitHub Actions
+          attachments: reports/newman-report.html
