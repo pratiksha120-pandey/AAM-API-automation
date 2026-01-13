@@ -1,8 +1,8 @@
-name: API Automation with Newman
+name: Postman Newman CI
 
 on:
   schedule:
-    - cron: "0 */3 * * *"   # Every 3 hours
+    - cron: '50 5 * * *'   # Runs every day at 11:20 AM IST
   workflow_dispatch:
 
 jobs:
@@ -10,65 +10,56 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout code
+      - name: Checkout repository
         uses: actions/checkout@v4
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 18
+          node-version: '18'
 
-      - name: Install dependencies
-        run: npm install
+      - name: Install Newman
+        run: npm install -g newman newman-reporter-htmlextra
 
-      - name: Run API Tests with Newman
+      - name: Run Postman Collection
         run: |
           mkdir -p reports
-          npx newman run AAM.postman_collection.json \
-          -e HWC-uat.postman_environment.json \
-          --timeout-request 60000 \
-          --timeout-script 60000 \
-          --delay-request 2000 \
-          --reporters cli,htmlextra \
-          --reporter-htmlextra-export reports/newman-report.html \
-          --reporter-htmlextra-showOnlyFails false \
-          --reporter-htmlextra-logs true \
-          --reporter-htmlextra-title "API Automation HTML Report" || true
+          newman run AAM.postman_collection.json \
+            -e HWT-uat.postman_environment.json \
+            -r htmlextra,json \
+            --reporter-htmlextra-export reports/newman-report.html
 
-      - name: Verify HTML report exists
-        run: |
-          echo "Checking reports directory..."
-          ls -l reports
-          test -f reports/newman-report.html
-
-      - name: Upload HTML Report to GitHub
+      - name: Upload Newman Report
+        if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: newman-html-report
+          name: newman-report
           path: reports/newman-report.html
 
-      - name: Send Email with HTML Report (PASS / FAIL)
+      - name: Email on Success
+        if: success()
         uses: dawidd6/action-send-mail@v3
         with:
           server_address: smtp.gmail.com
           server_port: 587
-          username: ${{ secrets.MAIL_USERNAME }}
-          password: ${{ secrets.MAIL_PASSWORD }}
-          subject: "📊 API Automation Report - HTML Attached (Test Change)"
-          body: |
-            Hi Team,
+          username: ${{ secrets.EMAIL_USERNAME }}
+          password: ${{ secrets.EMAIL_PASSWORD }}
+          subject: "✅ Postman Newman CI Passed"
+          body: "All API tests passed successfully. Report attached."
+          to: ${{ secrets.EMAIL_TO }}
+          from: Newman CI
+          attachments: reports/newman-report.html
 
-            The scheduled API automation run has been completed.
-
-            Please find the attached Newman HTML report.
-            It contains:
-            - Total test execution summary
-            - Passed / Failed test cases
-            - Error logs for failures
-            - Request and response details
-
-            Thanks,
-            Automation System
-          to: pratiksha.pandey@gmail.com
-          from: GitHub Actions
+      - name: Email on Failure
+        if: failure()
+        uses: dawidd6/action-send-mail@v3
+        with:
+          server_address: smtp.gmail.com
+          server_port: 587
+          username: ${{ secrets.EMAIL_USERNAME }}
+          password: ${{ secrets.EMAIL_PASSWORD }}
+          subject: "❌ Postman Newman CI Failed"
+          body: "Some API tests failed. Please check the attached report."
+          to: ${{ secrets.EMAIL_TO }}
+          from: Newman CI
           attachments: reports/newman-report.html
